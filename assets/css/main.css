@@ -1314,7 +1314,7 @@
 	}
 
 	html { 
-		background: url("../../images/background.jpg") no-repeat center center fixed; 
+		background: url("../../images/background2.jpg") no-repeat center center fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -1324,8 +1324,8 @@
 	body {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
-		font-size: 17pt;
-		color: #888;
+		font-size: 15pt;
+		color: #fff;
 		-webkit-text-stroke: 0.1px;
 	}
 
@@ -1348,7 +1348,7 @@
 	input, textarea, select {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
-		font-size: 17pt;
+		font-size: 40pt;
 		line-height: 1.75em;
 		color: #888;
 		-webkit-text-stroke: 0.1px;
