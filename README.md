@@ -1,3 +1,3 @@
 Personal Website
 
-gaganbhatia.me
+https://gagan3012.github.io/
