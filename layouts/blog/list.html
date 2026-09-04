@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="wrap">
+  <section class="page">
+    <a class="back-home" href="{{ "/" | relURL }}">&larr; Back to home</a>
+    <h1>Blog</h1>
+    <ul class="simple-list">
+      {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="item-meta">{{ .Date.Format "January 2, 2006" }}{{ with .Description }} &middot; {{ . }}{{ end }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+</div>
+{{ end }}

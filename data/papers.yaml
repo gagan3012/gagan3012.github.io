@@ -1,0 +1,117 @@
+# Publications.
+# venue: short label shown next to the paper — "arXiv" for preprints,
+#        otherwise the conference/journal (e.g. "EMNLP 2025").
+# Papers are grouped by year automatically; order within a year follows this file.
+- title: "From RAG to Agentic RAG for Faithful Islamic Question Answering"
+  authors: ["Gagan Bhatia", "Hamdy Mubarak", "Mustafa Jarrar", "George Mikros", "Fadi Zaraket", "Mahmoud Alhirthani", "Mutaz al-Khatib", "Logan Cochrane", "Kareem Darwish", "Rashid Yahiaoui", "Firoj Alam"]
+  year: 2026
+  venue: "ACL 2026 (Findings)"
+  link: "https://aclanthology.org/2026.findings-acl.1317.pdf"
+
+- title: "Fanar-Sadiq: A Multi-Agent Architecture for Grounded Islamic QA"
+  authors: ["Ummar Abbas", "Mourad Ouzzani", "Mohamed Y. Eltabakh", "Omar Sinan", "Gagan Bhatia", "Hamdy Mubarak", "Majd Hawasly", "Mohammed Qusay Hashim", "Kareem Darwish", "Firoj Alam"]
+  year: 2026
+  venue: "ACL 2026 (Industry Track)"
+  link: "https://aclanthology.org/2026.acl-industry.109.pdf"
+
+- title: "ChronoLens: Measuring Language Change Across Time, Languages, and Linguistic Levels"
+  authors: ["Gagan Bhatia", "Julian Schlenker", "Simone Paolo Ponzetto", "Steffen Eger"]
+  year: 2026
+  venue: "arXiv"
+  link: "https://arxiv.org/abs/2608.03507"
+
+- title: "What Really Controls Temporal Reasoning in Large Language Models: Tokenisation or Representation of Time?"
+  authors: ["Gagan Bhatia", "Ahmad Muhammad Isa", "Maxime Peyrard", "Wei Zhao"]
+  year: 2026
+  venue: "arXiv"
+  link: "https://arxiv.org/abs/2603.19017"
+
+- title: "Prototypicality Bias Reveals Blindspots in Multimodal Evaluation Metrics"
+  authors: ["Subhadeep Roy", "Gagan Bhatia", "Steffen Eger"]
+  year: 2026
+  venue: "arXiv"
+  link: "https://arxiv.org/abs/2601.04946"
+
+- title: "Who Annotates in NLP? A Large-scale Assessment of Human Annotation Reporting between 2018 and 2025"
+  authors: ["Maria Kunilovskaya", "Gagan Bhatia", "Lisa Sophie Albertelli", "Yanran Chen", "Christian Greisinger", "Lotta Kiefer", "Christoph Leiter", "Subhadeep Roy", "Tewodros Achamaleh", "Muhammad Arslan Manzoor", "Sebastian Pohl", "Yufang Hou", "Steffen Eger"]
+  year: 2026
+  venue: "arXiv"
+  link: "https://arxiv.org/abs/2606.02255"
+
+- title: "Beyond LLM-as-a-judge: Deterministic Metrics for Multilingual Generative Text Evaluation"
+  authors: ["Firoj Alam", "Gagan Bhatia", "Shajalal Reza Laskar", "Shammur Absar Chowdhury"]
+  year: 2026
+  venue: "arXiv"
+  link: "https://arxiv.org/abs/2604.05083"
+
+- title: "Advances in AI Systems on Islamic Knowledge Capabilities: A Critical Survey"
+  authors: ["Gagan Bhatia", "Hamdy Mubarak", "Majd Hawasly", "Mustafa Jarrar", "George Mikros", "Fadi Zaraket", "Mahmoud Alhirthani", "Mutaz al-Khatib", "Logan Cochrane", "Kareem Darwish", "Rashid Yahiaoui", "Firoj Alam"]
+  year: 2026
+  venue: "TechRxiv"
+  link: "https://huggingface.co/datasets/QCRI/islamic-knowledge-ai-survey"
+
+- title: "Date Fragments: A Hidden Bottleneck of Tokenization for Temporal Reasoning"
+  authors: ["Gagan Bhatia", "Maxime Peyrard", "Wei Zhao"]
+  year: 2025
+  venue: "EMNLP 2025"
+  link: "https://aclanthology.org/2025.emnlp-main.159.pdf"
+
+- title: "Swan and ArabicMTEB: Dialect-Aware, Arabic-Centric, Cross-Lingual, and Cross-Cultural Embedding Models and Benchmarks"
+  authors: ["Gagan Bhatia", "El Moatez Billah Nagoudi", "Abdellah El Mekki", "Fakhraddin Alwajih", "Muhammad Abdul-Mageed"]
+  year: 2025
+  venue: "NAACL 2025 (Findings)"
+  link: "https://aclanthology.org/2025.findings-naacl.263.pdf"
+
+- title: "DateLogicQA: Benchmarking Temporal Biases in Large Language Models"
+  authors: ["Gagan Bhatia", "MingZe Tang", "Cristina Mahanta", "Madiha Kazi", "Maxime Peyrard", "Wei Zhao"]
+  year: 2025
+  venue: "NAACL 2025 (SRW)"
+  link: "https://aclanthology.org/2025.naacl-srw.32.pdf"
+
+- title: "Distributional Semantics Tracing: A Framework for Explaining Hallucinations in Large Language Models"
+  authors: ["Gagan Bhatia", "Somayajulu G Sripada", "Kevin Allan", "Jacobo Azcona"]
+  year: 2025
+  venue: "arXiv"
+  link: "https://arxiv.org/abs/2510.06107"
+
+- title: "FinTral: A Family of GPT-4 Level Multimodal Financial Large Language Models"
+  authors: ["Gagan Bhatia", "El Moatez Billah Nagoudi", "Hasan Cavusoglu", "Muhammad Abdul-Mageed"]
+  year: 2024
+  venue: "ACL 2024 (Findings)"
+  link: "https://aclanthology.org/2024.findings-acl.774.pdf"
+
+- title: "Peacock: A Family of Arabic Multimodal Large Language Models and Benchmarks"
+  authors: ["Fakhraddin Alwajih", "El Moatez Billah Nagoudi", "Gagan Bhatia", "Abdelrahman Mohamed", "Muhammad Abdul-Mageed"]
+  year: 2024
+  venue: "ACL 2024"
+  link: "https://aclanthology.org/2024.acl-long.689.pdf"
+
+- title: "Qalam: A Multimodal LLM for Arabic Optical Character and Handwriting Recognition"
+  authors: ["Gagan Bhatia", "El Moatez Billah Nagoudi", "Fakhraddin Alwajih", "Muhammad Abdul-Mageed"]
+  year: 2024
+  venue: "ArabicNLP 2024"
+  link: "https://aclanthology.org/2024.arabicnlp-1.19.pdf"
+
+- title: "Dallah: A Dialect-Aware Multimodal Large Language Model for Arabic"
+  authors: ["Fakhraddin Alwajih", "Gagan Bhatia", "Muhammad Abdul-Mageed"]
+  year: 2024
+  venue: "ArabicNLP 2024"
+  link: "https://aclanthology.org/2024.arabicnlp-1.27.pdf"
+
+- title: "Beyond English: Evaluating LLMs for Arabic Grammatical Error Correction"
+  authors: ["Sang Kwon", "Gagan Bhatia", "El Moatez Billah Nagoudi", "Muhammad Abdul-Mageed"]
+  year: 2023
+  venue: "ArabicNLP 2023"
+  link: "https://aclanthology.org/2023.arabicnlp-1.9.pdf"
+
+- title: "SIDLR: Slot and Intent Detection Models for Low-Resource Language Varieties"
+  authors: ["Sang Yun Kwon", "Gagan Bhatia", "El Moatez Billah Nagoudi", "Alcides Alcoba Inciarte", "Muhammad Abdul-Mageed"]
+  year: 2023
+  venue: "VarDial 2023"
+  link: "https://aclanthology.org/2023.vardial-1.24.pdf"
+
+- title: "UBC-DLNLP at SemEval-2023 Task 12: Impact of Transfer Learning on African Sentiment Analysis"
+  authors: ["Gagan Bhatia", "Ife Adebara", "Abdelrahim Elmadany", "Muhammad Abdul-Mageed"]
+  year: 2023
+  venue: "SemEval 2023"
+  link: "https://aclanthology.org/2023.semeval-1.33.pdf"

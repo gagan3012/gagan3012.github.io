@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="wrap">
+  <section class="page">
+    <a class="back-home" href="{{ "/" | relURL }}">&larr; Back to home</a>
+    <h1>{{ .Title }}</h1>
+    <div class="prose">{{ .Content }}</div>
+    <ul class="simple-list">
+      {{ range .Pages }}
+      <li><a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+</div>
+{{ end }}

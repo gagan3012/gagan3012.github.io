@@ -1,0 +1,206 @@
+{{ define "main" }}
+{{ $papers := .Site.Data.papers }}
+{{ $preprintVenues := slice "arxiv" "techrxiv" "preprint" }}
+
+<section id="about" class="hero-section">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">{{ .Site.Params.eyebrow }}</p>
+        <h1>{{ .Site.Params.author }}</h1>
+        <p class="hero-role">{{ .Site.Params.description }}</p>
+        {{ with .Site.Params.tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
+        <div class="hero-links">
+          <a class="cv-button" href="{{ "files/cv.pdf" | relURL }}">CV (PDF)</a>
+          <a href="https://github.com/gagan3012" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=2Z0KWkEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+          <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:{{ .Site.Params.email }}">Email</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="{{ "images/photo.jpg" | relURL }}" alt="Portrait of {{ .Site.Params.author }}" width="224" height="272">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bio" class="section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">01</span>
+      <h2>About</h2>
+    </div>
+    <div class="prose">{{ .Content }}</div>
+    {{ with .Site.Params.interests }}
+    <ul class="chips">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</section>
+
+{{ if $papers }}
+<section id="research" class="section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">02</span>
+      <h2>Publications</h2>
+    </div>
+
+    {{ $years := slice }}
+    {{ range $papers }}{{ if not (in $years .year) }}{{ $years = $years | append .year }}{{ end }}{{ end }}
+    {{ range $y := sort $years "value" "desc" }}
+    <div class="pub-year-row">
+      <div class="pub-year">{{ $y }}</div>
+      <ul class="pub-list">
+        {{ range where $papers "year" $y }}
+        {{ $preprint := in $preprintVenues (lower .venue) }}
+        <li class="pub-item">
+          <div class="pub-venue{{ if $preprint }} is-preprint{{ end }}">[{{ .venue }}]</div>
+          <div class="pub-body">
+            {{ if .link }}
+            <a class="pub-title" href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a>
+            {{ else }}
+            <span class="pub-title">{{ .title }}</span>
+            {{ end }}
+            <p class="pub-authors">
+              {{ range $i, $a := .authors }}{{ if $i }}, {{ end }}{{ if eq $a "Gagan Bhatia" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+            </p>
+            {{ if .job_market_paper }}<span class="pub-flag">Job market paper</span>{{ end }}
+            {{ with .abstract }}<p class="pub-abstract">{{ . }}</p>{{ end }}
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ $awards := .Site.Data.awards }}
+{{ if $awards }}
+<section id="awards" class="section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">03</span>
+      <h2>Awards &amp; Service</h2>
+    </div>
+    <ul class="simple-list">
+      {{ range $awards }}
+      <li class="row-item">
+        <div class="row-tag">[{{ with .detail }}{{ . }}{{ else }}{{ .year }}{{ end }}]</div>
+        <div>
+          <span class="item-title">{{ .name }}</span>
+          {{ with .year }}<span class="item-meta">{{ . }}</span>{{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+{{ $projects := .Site.Data.projects }}
+{{ if $projects }}
+<section id="projects" class="section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">04</span>
+      <h2>Software &amp; Projects</h2>
+    </div>
+    <ul class="simple-list">
+      {{ range $projects }}
+      <li class="row-item">
+        <div class="row-tag">[{{ with .language }}{{ . }}{{ else }}CODE{{ end }}]</div>
+        <div>
+          <a class="item-title" href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+          <span class="item-meta">{{ .description }}</span>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+{{ $teaching := .Site.Data.teaching }}
+{{ if $teaching }}
+<section id="teaching" class="section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">05</span>
+      <h2>Teaching</h2>
+    </div>
+    <ul class="simple-list">
+      {{ range $teaching }}
+      <li class="row-item">
+        <div class="row-tag">[{{ .term }}]</div>
+        <div>
+          <span class="item-title">{{ .course }}</span>
+          <span class="item-meta">{{ .role }}, {{ .institution }}</span>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+{{ $newsItems := .Site.Data.news }}
+{{ if $newsItems }}
+<section id="news" class="section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">06</span>
+      <h2>News</h2>
+    </div>
+    <ul class="simple-list">
+      {{ range first 8 (sort $newsItems "date" "desc") }}
+      <li class="row-item">
+        <div class="row-tag">[{{ .date }}]</div>
+        <div><span class="item-title">{{ .text }}</span></div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+{{ if $posts }}
+<section id="blog" class="section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">07</span>
+      <h2>Writing</h2>
+    </div>
+    <ul class="simple-list">
+      {{ range first 5 $posts.ByDate.Reverse }}
+      <li class="row-item">
+        <div class="row-tag">[{{ .Date.Format "2006-01" }}]</div>
+        <div><a class="item-title" href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ if gt (len $posts) 5 }}<a class="view-all" href="{{ "blog/" | relURL }}">All posts &rarr;</a>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section id="contact" class="section contact-section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">{{ if $awards }}04{{ else }}03{{ end }}</span>
+      <h2>Contact</h2>
+    </div>
+    <a class="contact-email" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    <div class="hero-links">
+      <a href="https://github.com/gagan3012" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=2Z0KWkEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+{{ end }}

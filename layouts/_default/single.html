@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="wrap">
+  <article class="page prose">
+    <a class="back-home" href="{{ "/" | relURL }}">&larr; Back to home</a>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}

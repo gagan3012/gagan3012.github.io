@@ -1,0 +1,40 @@
+baseURL: "https://gagan3012.github.io/"
+title: "Gagan Bhatia"
+languageCode: en-us
+enableRobotsTXT: false
+
+params:
+  description: "Doctoral Researcher, CSAI, University of Technology Nuremberg"
+  author: "Gagan Bhatia"
+  email: "gbhatia880@gmail.com"
+  eyebrow: "PhD Candidate · Nuremberg, Germany"
+  tagline: "I study how large language models evaluate generated text and reason about time and language change."
+  institution: "University of Technology Nuremberg"
+  interests:
+    - "Artificial Intelligence"
+    - "Machine Learning"
+    - "Natural Language Processing"
+    - "Data Science"
+  mysite:
+    credit: false
+    discovery: false
+
+menu:
+  main:
+    - name: Research
+      url: "/#research"
+      weight: 10
+    - name: CV
+      url: "/files/cv.pdf"
+      weight: 20
+    - name: Contact
+      url: "/#contact"
+      weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home: ["HTML"]

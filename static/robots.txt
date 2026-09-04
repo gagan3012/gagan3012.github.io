@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gagan3012.github.io/sitemap.xml
+
+# AI-agent welcome file: https://gagan3012.github.io/llms.txt

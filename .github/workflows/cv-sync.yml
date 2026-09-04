@@ -1,0 +1,42 @@
+name: Sync CV from resume-v2
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+
+      - name: Checkout resume-v2 source
+        uses: actions/checkout@v4
+        with:
+          repository: gagan3012/resume-v2
+          path: resume-src
+
+      - name: Compile CV to PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          working_directory: resume-src
+          latexmk_use_xelatex: true
+
+      - name: Copy PDF into site
+        run: |
+          mkdir -p static/files
+          cp resume-src/resume.pdf static/files/cv.pdf
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/files/cv.pdf
+          git diff --cached --quiet || git commit -m "chore: sync CV from resume-v2"
+          git push
