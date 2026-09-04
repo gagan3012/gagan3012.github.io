@@ -49,44 +49,51 @@
       <h2>Publications</h2>
     </div>
 
+    {{/* Flatten to one list, newest year first, keeping file order within a year. */}}
     {{ $years := slice }}
     {{ range $papers }}{{ if not (in $years .year) }}{{ $years = $years | append .year }}{{ end }}{{ end }}
-    {{ range $y := sort $years "value" "desc" }}
-    <div class="pub-year-row">
-      <div class="pub-year">{{ $y }}</div>
-      <ul class="pub-list">
-        {{ range where $papers "year" $y }}
-        {{ $preprint := in $preprintVenues (lower .venue) }}
-        <li class="pub-item">
-          <div class="pub-venue{{ if $preprint }} is-preprint{{ end }}">[{{ .venue }}]</div>
-          <div class="pub-body">
-            {{ if .link }}
-            <a class="pub-title" href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a>
-            {{ else }}
-            <span class="pub-title">{{ .title }}</span>
-            {{ end }}
-            <p class="pub-authors">
-              {{ range $i, $a := .authors }}{{ if $i }}, {{ end }}{{ if eq $a "Gagan Bhatia" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
-            </p>
-            {{ if .job_market_paper }}<span class="pub-flag">Job market paper</span>{{ end }}
-            {{ with .abstract }}<p class="pub-abstract">{{ . }}</p>{{ end }}
-            <div class="pub-actions">
-              {{ with .link }}<a class="pub-action" href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
-              {{ with .bibtex }}
-              <details class="bib">
-                <summary class="pub-action">BibTeX</summary>
-                <div class="bib-box">
-                  <button class="copy-btn" type="button" aria-label="Copy BibTeX to clipboard">Copy</button>
-                  <pre><code>{{ . }}</code></pre>
-                </div>
-              </details>
-              {{ end }}
-            </div>
-          </div>
-        </li>
-        {{ end }}
-      </ul>
-    </div>
+    {{ $flat := slice }}
+    {{ range $y := sort $years "value" "desc" }}{{ $flat = $flat | append (where $papers "year" $y) }}{{ end }}
+    {{ $limit := 6 }}
+    {{ $shown := newScratch }}{{ $shown.Set "year" 0 }}
+
+    <ul class="pub-list is-collapsed" id="pub-list">
+      {{ range $idx, $p := $flat }}
+      {{ $hidden := ge $idx $limit }}
+      {{ if ne $p.year ($shown.Get "year") }}
+      {{ $shown.Set "year" $p.year }}
+      <li class="pub-year{{ if $hidden }} pub-hidden{{ end }}">{{ $p.year }}</li>
+      {{ end }}
+      {{ $preprint := in $preprintVenues (lower $p.venue) }}
+      <li class="pub-item{{ if $hidden }} pub-hidden{{ end }}">
+        <div class="pub-venue{{ if $preprint }} is-preprint{{ end }}">[{{ $p.venue }}]</div>
+        <div class="pub-body">
+          {{ if $p.link }}
+          <a class="pub-title" href="{{ $p.link }}" target="_blank" rel="noopener">{{ $p.title }}</a>
+          {{ else }}
+          <span class="pub-title">{{ $p.title }}</span>
+          {{ end }}
+          <p class="pub-authors">
+            {{ range $i, $a := $p.authors }}{{ if $i }}, {{ end }}{{ if eq $a "Gagan Bhatia" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
+          </p>
+          {{ if $p.job_market_paper }}<span class="pub-flag">Job market paper</span>{{ end }}
+        </div>
+        <div class="pub-actions">
+          {{ with $p.link }}<a class="pub-action" href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
+          {{ with $p.bibtex }}
+          <button class="pub-action bib-trigger" type="button" data-title="{{ $p.title }}">BibTeX</button>
+          <pre class="bib-source" hidden>{{ . }}</pre>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+
+    {{ if gt (len $flat) $limit }}
+    <button class="show-all" type="button" data-target="pub-list"
+            data-more="Show all {{ len $flat }} publications" data-less="Show fewer">
+      Show all {{ len $flat }} publications
+    </button>
     {{ end }}
   </div>
 </section>
@@ -244,4 +251,16 @@
     </div>
   </div>
 </section>
+<dialog id="bib-modal" class="bib-modal" aria-labelledby="bib-modal-title">
+  <div class="bib-modal-inner">
+    <div class="bib-modal-head">
+      <span class="bib-modal-title" id="bib-modal-title">BibTeX</span>
+      <button class="bib-close" type="button" aria-label="Close">&times;</button>
+    </div>
+    <pre><code id="bib-modal-code"></code></pre>
+    <div class="bib-modal-foot">
+      <button class="copy-btn" type="button">Copy</button>
+    </div>
+  </div>
+</dialog>
 {{ end }}

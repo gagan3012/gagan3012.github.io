@@ -1,6 +1,6 @@
 # Gagan Bhatia
 
-Gagan Bhatia is a second-year PhD candidate at the Chair of Computer Science
+Gagan Bhatia is a first-year PhD candidate at the Chair of Computer Science
 and Artificial Intelligence (CSAI), University of Technology Nuremberg,
 advised by Steffen Eger. His research covers evaluation metrics for
 generative text and multimodal models, temporal reasoning and tokenisation
