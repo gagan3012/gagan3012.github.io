@@ -54,46 +54,6 @@
     ,\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.acl-industry.109/\"\
     ,\n    doi = \"10.18653/v1/2026.acl-industry.109\",\n    pages = \"1567--1588\",\n    ISBN = \"979-8-89176-394-4\"\
     \n}"
-- title: 'ChronoLens: Measuring Language Change Across Time, Languages, and Linguistic Levels'
-  authors:
-  - Gagan Bhatia
-  - Julian Schlenker
-  - Simone Paolo Ponzetto
-  - Steffen Eger
-  year: 2026
-  venue: arXiv
-  link: https://arxiv.org/abs/2608.03507
-  bibtex: "@misc{bhatia2026chronolensmeasuringlanguagechange,\n    title={ChronoLens: Measuring Language\
-    \ Change Across Time, Languages, and Linguistic Levels}, \n    author={Gagan Bhatia and Julian Schlenker\
-    \ and Simone Paolo Ponzetto and Steffen Eger},\n    year={2026},\n    eprint={2608.03507},\n    archivePrefix={arXiv},\n\
-    \    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2608.03507}, \n}"
-- title: 'What Really Controls Temporal Reasoning in Large Language Models: Tokenisation or Representation
-    of Time?'
-  authors:
-  - Gagan Bhatia
-  - Ahmad Muhammad Isa
-  - Maxime Peyrard
-  - Wei Zhao
-  year: 2026
-  venue: arXiv
-  link: https://arxiv.org/abs/2603.19017
-  bibtex: "@misc{bhatia2026reallycontrolstemporalreasoning,\n    title={What Really Controls Temporal\
-    \ Reasoning in Large Language Models: Tokenisation or Representation of Time?}, \n    author={Gagan\
-    \ Bhatia and Ahmad Muhammad Isa and Maxime Peyrard and Wei Zhao},\n    year={2026},\n    eprint={2603.19017},\n\
-    \    archivePrefix={arXiv},\n    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2603.19017},\
-    \ \n}"
-- title: Prototypicality Bias Reveals Blindspots in Multimodal Evaluation Metrics
-  authors:
-  - Subhadeep Roy
-  - Gagan Bhatia
-  - Steffen Eger
-  year: 2026
-  venue: arXiv
-  link: https://arxiv.org/abs/2601.04946
-  bibtex: "@misc{roy2026prototypicalitybiasrevealsblindspots,\n    title={Prototypicality Bias Reveals\
-    \ Blindspots in Multimodal Evaluation Metrics}, \n    author={Subhadeep Roy and Gagan Bhatia and Steffen\
-    \ Eger},\n    year={2026},\n    eprint={2601.04946},\n    archivePrefix={arXiv},\n    primaryClass={cs.CV},\n\
-    \    url={https://arxiv.org/abs/2601.04946}, \n}"
 - title: Who Annotates in NLP? A Large-scale Assessment of Human Annotation Reporting between 2018 and
     2025
   authors:
@@ -111,15 +71,57 @@
   - Yufang Hou
   - Steffen Eger
   year: 2026
-  venue: arXiv
+  venue: EMNLP 2026
   link: https://arxiv.org/abs/2606.02255
-  bibtex: "@misc{kunilovskaya2026annotatesnlplargescaleassessment,\n    title={Who Annotates in NLP? A\
-    \ Large-scale Assessment of Human Annotation Reporting between 2018 and 2025}, \n    author={Maria\
-    \ Kunilovskaya and Gagan Bhatia and Lisa Sophie Albertelli and Yanran Chen and Christian Greisinger\
-    \ and Lotta Kiefer and Christoph Leiter and Subhadeep Roy and Tewodros Achamaleh and Muhammad Arslan\
-    \ Manzoor and Sebastian Pohl and Yufang Hou and Steffen Eger},\n    year={2026},\n    eprint={2606.02255},\n\
-    \    archivePrefix={arXiv},\n    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2606.02255},\
-    \ \n}"
+  bibtex: "@inproceedings{kunilovskaya-etal-2026-annotates,\n    title = \"Who Annotates in NLP? A Large-scale\
+    \ Assessment of Human Annotation Reporting between 2018 and 2025\",\n    author = \"Maria Kunilovskaya\
+    \ and\n    Gagan Bhatia and\n    Lisa Sophie Albertelli and\n    Yanran Chen and\n    Christian Greisinger\
+    \ and\n    Lotta Kiefer and\n    Christoph Leiter and\n    Subhadeep Roy and\n    Tewodros Achamaleh\
+    \ and\n    Muhammad Arslan Manzoor and\n    Sebastian Pohl and\n    Yufang Hou and\n    Steffen Eger\"\
+    ,\n    booktitle = \"Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing\"\
+    ,\n    year = \"2026\",\n    publisher = \"Association for Computational Linguistics\",\n    note\
+    \ = \"To appear\",\n    url = \"https://arxiv.org/abs/2606.02255\"\n}"
+- title: 'What Really Controls Temporal Reasoning in Large Language Models: Tokenisation or Representation
+    of Time?'
+  authors:
+  - Gagan Bhatia
+  - Ahmad Muhammad Isa
+  - Maxime Peyrard
+  - Wei Zhao
+  year: 2026
+  venue: EMNLP 2026 (Findings)
+  link: https://arxiv.org/abs/2603.19017
+  bibtex: "@inproceedings{bhatia-etal-2026-really,\n    title = \"What Really Controls Temporal Reasoning\
+    \ in Large Language Models: Tokenisation or Representation of Time?\",\n    author = \"Gagan Bhatia\
+    \ and\n    Ahmad Muhammad Isa and\n    Maxime Peyrard and\n    Wei Zhao\",\n    booktitle = \"Findings\
+    \ of the Association for Computational Linguistics: EMNLP 2026\",\n    year = \"2026\",\n    publisher\
+    \ = \"Association for Computational Linguistics\",\n    note = \"To appear\",\n    url = \"https://arxiv.org/abs/2603.19017\"\
+    \n}"
+- title: 'ChronoLens: Measuring Language Change Across Time, Languages, and Linguistic Levels'
+  authors:
+  - Gagan Bhatia
+  - Julian Schlenker
+  - Simone Paolo Ponzetto
+  - Steffen Eger
+  year: 2026
+  venue: arXiv
+  link: https://arxiv.org/abs/2608.03507
+  bibtex: "@misc{bhatia2026chronolensmeasuringlanguagechange,\n    title={ChronoLens: Measuring Language\
+    \ Change Across Time, Languages, and Linguistic Levels}, \n    author={Gagan Bhatia and Julian Schlenker\
+    \ and Simone Paolo Ponzetto and Steffen Eger},\n    year={2026},\n    eprint={2608.03507},\n    archivePrefix={arXiv},\n\
+    \    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2608.03507}, \n}"
+- title: Prototypicality Bias Reveals Blindspots in Multimodal Evaluation Metrics
+  authors:
+  - Subhadeep Roy
+  - Gagan Bhatia
+  - Steffen Eger
+  year: 2026
+  venue: arXiv
+  link: https://arxiv.org/abs/2601.04946
+  bibtex: "@misc{roy2026prototypicalitybiasrevealsblindspots,\n    title={Prototypicality Bias Reveals\
+    \ Blindspots in Multimodal Evaluation Metrics}, \n    author={Subhadeep Roy and Gagan Bhatia and Steffen\
+    \ Eger},\n    year={2026},\n    eprint={2601.04946},\n    archivePrefix={arXiv},\n    primaryClass={cs.CV},\n\
+    \    url={https://arxiv.org/abs/2601.04946}, \n}"
 - title: 'Beyond LLM-as-a-judge: Deterministic Metrics for Multilingual Generative Text Evaluation'
   authors:
   - Firoj Alam

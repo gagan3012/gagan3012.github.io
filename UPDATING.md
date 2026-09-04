@@ -92,6 +92,14 @@ Post content in Markdown.
 ## A preprint got accepted
 
 Change its `venue` in `data/papers.yaml` from `"arXiv"` to the venue name
-(e.g. `"EMNLP 2026"`), and swap `link` to the anthology/publisher URL.
+(e.g. `"EMNLP 2026"`). The tag then renders in the accent colour instead of
+the dimmed preprint style. Keep the arXiv `link` until the paper appears on
+the ACL Anthology.
+
+Once it *is* on the Anthology: update `link` to the anthology URL, **delete
+the paper's `bibtex:` block**, and run `python scripts/fetch_bibtex.py` (or
+wait for the weekly sync). The script only fills in missing entries, so
+deleting the block is what lets it pull the official citation with pages,
+DOI, and editors.
 
 All changes auto-deploy within about two minutes of pushing to `main`.
