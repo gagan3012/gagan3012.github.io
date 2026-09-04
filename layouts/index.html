@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $papers := .Site.Data.papers }}
 {{ $preprintVenues := slice "arxiv" "techrxiv" "preprint" }}
+{{ $n := newScratch }}{{ $n.Set "i" 0 }}
 
 <section id="about" class="hero-section">
   <div class="wrap">
@@ -28,7 +29,7 @@
 <section id="bio" class="section">
   <div class="wrap reveal">
     <div class="section-head">
-      <span class="section-index">01</span>
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>About</h2>
     </div>
     <div class="prose">{{ .Content }}</div>
@@ -44,7 +45,7 @@
 <section id="research" class="section">
   <div class="wrap reveal">
     <div class="section-head">
-      <span class="section-index">02</span>
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>Publications</h2>
     </div>
 
@@ -69,6 +70,18 @@
             </p>
             {{ if .job_market_paper }}<span class="pub-flag">Job market paper</span>{{ end }}
             {{ with .abstract }}<p class="pub-abstract">{{ . }}</p>{{ end }}
+            <div class="pub-actions">
+              {{ with .link }}<a class="pub-action" href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
+              {{ with .bibtex }}
+              <details class="bib">
+                <summary class="pub-action">BibTeX</summary>
+                <div class="bib-box">
+                  <button class="copy-btn" type="button" aria-label="Copy BibTeX to clipboard">Copy</button>
+                  <pre><code>{{ . }}</code></pre>
+                </div>
+              </details>
+              {{ end }}
+            </div>
           </div>
         </li>
         {{ end }}
@@ -79,12 +92,40 @@
 </section>
 {{ end }}
 
+{{ $experience := .Site.Data.experience }}
+{{ if $experience }}
+<section id="experience" class="section">
+  <div class="wrap reveal">
+    <div class="section-head">
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
+      <h2>Experience</h2>
+    </div>
+    <ul class="simple-list">
+      {{ range $experience }}
+      <li class="row-item">
+        <div class="row-tag">[{{ .period }}]</div>
+        <div>
+          <span class="item-title">{{ .role }}</span>
+          <span class="item-meta">{{ .org }}{{ with .location }} &middot; {{ . }}{{ end }}</span>
+          {{ with .bullets }}
+          <ul class="bullets">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
 {{ $awards := .Site.Data.awards }}
 {{ if $awards }}
 <section id="awards" class="section">
   <div class="wrap reveal">
     <div class="section-head">
-      <span class="section-index">03</span>
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>Awards &amp; Service</h2>
     </div>
     <ul class="simple-list">
@@ -107,7 +148,7 @@
 <section id="projects" class="section">
   <div class="wrap reveal">
     <div class="section-head">
-      <span class="section-index">04</span>
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>Software &amp; Projects</h2>
     </div>
     <ul class="simple-list">
@@ -130,7 +171,7 @@
 <section id="teaching" class="section">
   <div class="wrap reveal">
     <div class="section-head">
-      <span class="section-index">05</span>
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>Teaching</h2>
     </div>
     <ul class="simple-list">
@@ -153,7 +194,7 @@
 <section id="news" class="section">
   <div class="wrap reveal">
     <div class="section-head">
-      <span class="section-index">06</span>
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>News</h2>
     </div>
     <ul class="simple-list">
@@ -173,7 +214,7 @@
 <section id="blog" class="section">
   <div class="wrap reveal">
     <div class="section-head">
-      <span class="section-index">07</span>
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>Writing</h2>
     </div>
     <ul class="simple-list">
@@ -192,7 +233,7 @@
 <section id="contact" class="section contact-section">
   <div class="wrap reveal">
     <div class="section-head">
-      <span class="section-index">{{ if $awards }}04{{ else }}03{{ end }}</span>
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>Contact</h2>
     </div>
     <a class="contact-email" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>

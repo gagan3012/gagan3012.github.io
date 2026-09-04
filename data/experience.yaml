@@ -1,0 +1,41 @@
+# Work and research experience, newest first.
+# Mirrors the Experience section of the CV (gagan3012/resume-v2).
+- role: "Research Scientist"
+  org: "Qatar Computing Research Institute"
+  location: "Doha, Qatar"
+  period: "Sep 2025 — Mar 2026"
+  bullets:
+    - "Designed agentic RAG architectures with structured tool-calling for iterative evidence retrieval and answer revision, achieving state-of-the-art faithfulness."
+    - "Contributed retrieval and verification components to a multi-agent QA platform deployed in production, serving 1.9M+ requests in under a year."
+
+- role: "Research Assistant"
+  org: "University of Aberdeen"
+  location: "Aberdeen, UK"
+  period: "Mar 2025 — Oct 2025"
+  bullets:
+    - "Implemented attention-based interpretability methods to deliver actionable insights for improving LLM architecture (Date Fragments)."
+    - "Designed agentic AI frameworks and workflows for efficient data extraction from large documents in medical and financial domains."
+
+- role: "Research Assistant"
+  org: "University of British Columbia"
+  location: "Vancouver, Canada"
+  period: "Sep 2022 — Sep 2024"
+  bullets:
+    - "Engineered and trained a foundation model (Qalam) for Arabic OCR, achieving a 3-point F1 improvement over state of the art."
+    - "Built and benchmarked multimodal LLMs (FinTral) using distributed training on a multi-GPU cluster."
+
+- role: "Machine Learning Engineer"
+  org: "Xtract One"
+  location: "Toronto, Canada"
+  period: "Oct 2021 — Sep 2022"
+  bullets:
+    - "Owned the full lifecycle of a Vision Transformer system for image manipulation detection, from training to deployment via a REST API on AWS for a national defence client."
+    - "Architected and deployed a scalable document intelligence pipeline on AWS processing over 10,000 documents daily, automating OCR, table, and text extraction."
+
+- role: "Software Engineer"
+  org: "Amazon Web Services"
+  location: "Vancouver, Canada"
+  period: "May 2021 — Dec 2021"
+  bullets:
+    - "Enhanced the core NLU model for AWS Lex, improving intent recognition accuracy by 10% through targeted fine-tuning."
+    - "Deployed a production-ready XGBoost model on AWS SageMaker for a healthcare application, automating detection of critical symptoms from streaming data."

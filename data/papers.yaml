@@ -2,116 +2,360 @@
 # venue: short label shown next to the paper — "arXiv" for preprints,
 #        otherwise the conference/journal (e.g. "EMNLP 2025").
 # Papers are grouped by year automatically; order within a year follows this file.
-- title: "From RAG to Agentic RAG for Faithful Islamic Question Answering"
-  authors: ["Gagan Bhatia", "Hamdy Mubarak", "Mustafa Jarrar", "George Mikros", "Fadi Zaraket", "Mahmoud Alhirthani", "Mutaz al-Khatib", "Logan Cochrane", "Kareem Darwish", "Rashid Yahiaoui", "Firoj Alam"]
+# bibtex: filled in by scripts/fetch_bibtex.py; hand-edits are preserved.
+- title: From RAG to Agentic RAG for Faithful Islamic Question Answering
+  authors:
+  - Gagan Bhatia
+  - Hamdy Mubarak
+  - Mustafa Jarrar
+  - George Mikros
+  - Fadi Zaraket
+  - Mahmoud Alhirthani
+  - Mutaz al-Khatib
+  - Logan Cochrane
+  - Kareem Darwish
+  - Rashid Yahiaoui
+  - Firoj Alam
   year: 2026
-  venue: "ACL 2026 (Findings)"
-  link: "https://aclanthology.org/2026.findings-acl.1317.pdf"
-
-- title: "Fanar-Sadiq: A Multi-Agent Architecture for Grounded Islamic QA"
-  authors: ["Ummar Abbas", "Mourad Ouzzani", "Mohamed Y. Eltabakh", "Omar Sinan", "Gagan Bhatia", "Hamdy Mubarak", "Majd Hawasly", "Mohammed Qusay Hashim", "Kareem Darwish", "Firoj Alam"]
+  venue: ACL 2026 (Findings)
+  link: https://aclanthology.org/2026.findings-acl.1317.pdf
+  bibtex: "@inproceedings{bhatia-etal-2026-rag,\n    title = \"From {RAG} to Agentic {RAG} for Faithful\
+    \ Islamic Question Answering\",\n    author = \"Bhatia, Gagan  and\n    Mubarak, Hamdy  and\n    Jarrar,\
+    \ Mustafa  and\n    Mikros, George  and\n    Zaraket, Fadi  and\n    Alhirthani, Mahmoud  and\n  \
+    \  al-Khatib, Mutaz  and\n    Cochrane, Logan  and\n    Darwish, Kareem Mohamed  and\n    Yahiaoui,\
+    \ Rashid  and\n    Alam, Firoj\",\n    editor = \"Liakata, Maria  and\n    Moreira, Viviane P.  and\n\
+    \    Zhang, Jiajun  and\n    Jurgens, David\",\n    booktitle = \"Findings of the {A}ssociation for\
+    \ {C}omputational {L}inguistics: {ACL} 2026\",\n    month = jul,\n    year = \"2026\",\n    address\
+    \ = \"San Diego, California, United States\",\n    publisher = \"Association for Computational Linguistics\"\
+    ,\n    url = \"https://aclanthology.org/2026.findings-acl.1317/\",\n    doi = \"10.18653/v1/2026.findings-acl.1317\"\
+    ,\n    pages = \"26469--26488\",\n    ISBN = \"979-8-89176-395-1\"\n}"
+- title: 'Fanar-Sadiq: A Multi-Agent Architecture for Grounded Islamic QA'
+  authors:
+  - Ummar Abbas
+  - Mourad Ouzzani
+  - Mohamed Y. Eltabakh
+  - Omar Sinan
+  - Gagan Bhatia
+  - Hamdy Mubarak
+  - Majd Hawasly
+  - Mohammed Qusay Hashim
+  - Kareem Darwish
+  - Firoj Alam
   year: 2026
-  venue: "ACL 2026 (Industry Track)"
-  link: "https://aclanthology.org/2026.acl-industry.109.pdf"
-
-- title: "ChronoLens: Measuring Language Change Across Time, Languages, and Linguistic Levels"
-  authors: ["Gagan Bhatia", "Julian Schlenker", "Simone Paolo Ponzetto", "Steffen Eger"]
+  venue: ACL 2026 (Industry Track)
+  link: https://aclanthology.org/2026.acl-industry.109.pdf
+  bibtex: "@inproceedings{abbas-etal-2026-fanar,\n    title = \"Fanar-Sadiq: A Multi-Agent Architecture\
+    \ for Grounded Islamic {QA}\",\n    author = \"Abbas, Ummar  and\n    Ouzzani, Mourad  and\n    Eltabakh,\
+    \ Mohamed Y.  and\n    Sinan, Omar  and\n    Bhatia, Gagan  and\n    Mubarak, Hamdy  and\n    Hawasly,\
+    \ Majd  and\n    Hashim, Mohammed Qusay  and\n    Darwish, Kareem Mohamed  and\n    Alam, Firoj\"\
+    ,\n    editor = \"Li, Yunyao  and\n    Rehm, Georg  and\n    Tu, Mei\",\n    booktitle = \"Proceedings\
+    \ of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 6: Industry\
+    \ Track)\",\n    month = jul,\n    year = \"2026\",\n    address = \"San Diego, California, USA\"\
+    ,\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.acl-industry.109/\"\
+    ,\n    doi = \"10.18653/v1/2026.acl-industry.109\",\n    pages = \"1567--1588\",\n    ISBN = \"979-8-89176-394-4\"\
+    \n}"
+- title: 'ChronoLens: Measuring Language Change Across Time, Languages, and Linguistic Levels'
+  authors:
+  - Gagan Bhatia
+  - Julian Schlenker
+  - Simone Paolo Ponzetto
+  - Steffen Eger
   year: 2026
-  venue: "arXiv"
-  link: "https://arxiv.org/abs/2608.03507"
-
-- title: "What Really Controls Temporal Reasoning in Large Language Models: Tokenisation or Representation of Time?"
-  authors: ["Gagan Bhatia", "Ahmad Muhammad Isa", "Maxime Peyrard", "Wei Zhao"]
+  venue: arXiv
+  link: https://arxiv.org/abs/2608.03507
+  bibtex: "@misc{bhatia2026chronolensmeasuringlanguagechange,\n    title={ChronoLens: Measuring Language\
+    \ Change Across Time, Languages, and Linguistic Levels}, \n    author={Gagan Bhatia and Julian Schlenker\
+    \ and Simone Paolo Ponzetto and Steffen Eger},\n    year={2026},\n    eprint={2608.03507},\n    archivePrefix={arXiv},\n\
+    \    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2608.03507}, \n}"
+- title: 'What Really Controls Temporal Reasoning in Large Language Models: Tokenisation or Representation
+    of Time?'
+  authors:
+  - Gagan Bhatia
+  - Ahmad Muhammad Isa
+  - Maxime Peyrard
+  - Wei Zhao
   year: 2026
-  venue: "arXiv"
-  link: "https://arxiv.org/abs/2603.19017"
-
-- title: "Prototypicality Bias Reveals Blindspots in Multimodal Evaluation Metrics"
-  authors: ["Subhadeep Roy", "Gagan Bhatia", "Steffen Eger"]
+  venue: arXiv
+  link: https://arxiv.org/abs/2603.19017
+  bibtex: "@misc{bhatia2026reallycontrolstemporalreasoning,\n    title={What Really Controls Temporal\
+    \ Reasoning in Large Language Models: Tokenisation or Representation of Time?}, \n    author={Gagan\
+    \ Bhatia and Ahmad Muhammad Isa and Maxime Peyrard and Wei Zhao},\n    year={2026},\n    eprint={2603.19017},\n\
+    \    archivePrefix={arXiv},\n    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2603.19017},\
+    \ \n}"
+- title: Prototypicality Bias Reveals Blindspots in Multimodal Evaluation Metrics
+  authors:
+  - Subhadeep Roy
+  - Gagan Bhatia
+  - Steffen Eger
   year: 2026
-  venue: "arXiv"
-  link: "https://arxiv.org/abs/2601.04946"
-
-- title: "Who Annotates in NLP? A Large-scale Assessment of Human Annotation Reporting between 2018 and 2025"
-  authors: ["Maria Kunilovskaya", "Gagan Bhatia", "Lisa Sophie Albertelli", "Yanran Chen", "Christian Greisinger", "Lotta Kiefer", "Christoph Leiter", "Subhadeep Roy", "Tewodros Achamaleh", "Muhammad Arslan Manzoor", "Sebastian Pohl", "Yufang Hou", "Steffen Eger"]
+  venue: arXiv
+  link: https://arxiv.org/abs/2601.04946
+  bibtex: "@misc{roy2026prototypicalitybiasrevealsblindspots,\n    title={Prototypicality Bias Reveals\
+    \ Blindspots in Multimodal Evaluation Metrics}, \n    author={Subhadeep Roy and Gagan Bhatia and Steffen\
+    \ Eger},\n    year={2026},\n    eprint={2601.04946},\n    archivePrefix={arXiv},\n    primaryClass={cs.CV},\n\
+    \    url={https://arxiv.org/abs/2601.04946}, \n}"
+- title: Who Annotates in NLP? A Large-scale Assessment of Human Annotation Reporting between 2018 and
+    2025
+  authors:
+  - Maria Kunilovskaya
+  - Gagan Bhatia
+  - Lisa Sophie Albertelli
+  - Yanran Chen
+  - Christian Greisinger
+  - Lotta Kiefer
+  - Christoph Leiter
+  - Subhadeep Roy
+  - Tewodros Achamaleh
+  - Muhammad Arslan Manzoor
+  - Sebastian Pohl
+  - Yufang Hou
+  - Steffen Eger
   year: 2026
-  venue: "arXiv"
-  link: "https://arxiv.org/abs/2606.02255"
-
-- title: "Beyond LLM-as-a-judge: Deterministic Metrics for Multilingual Generative Text Evaluation"
-  authors: ["Firoj Alam", "Gagan Bhatia", "Shajalal Reza Laskar", "Shammur Absar Chowdhury"]
+  venue: arXiv
+  link: https://arxiv.org/abs/2606.02255
+  bibtex: "@misc{kunilovskaya2026annotatesnlplargescaleassessment,\n    title={Who Annotates in NLP? A\
+    \ Large-scale Assessment of Human Annotation Reporting between 2018 and 2025}, \n    author={Maria\
+    \ Kunilovskaya and Gagan Bhatia and Lisa Sophie Albertelli and Yanran Chen and Christian Greisinger\
+    \ and Lotta Kiefer and Christoph Leiter and Subhadeep Roy and Tewodros Achamaleh and Muhammad Arslan\
+    \ Manzoor and Sebastian Pohl and Yufang Hou and Steffen Eger},\n    year={2026},\n    eprint={2606.02255},\n\
+    \    archivePrefix={arXiv},\n    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2606.02255},\
+    \ \n}"
+- title: 'Beyond LLM-as-a-judge: Deterministic Metrics for Multilingual Generative Text Evaluation'
+  authors:
+  - Firoj Alam
+  - Gagan Bhatia
+  - Sahinur Rahman Laskar
+  - Shammur Absar Chowdhury
   year: 2026
-  venue: "arXiv"
-  link: "https://arxiv.org/abs/2604.05083"
-
-- title: "Advances in AI Systems on Islamic Knowledge Capabilities: A Critical Survey"
-  authors: ["Gagan Bhatia", "Hamdy Mubarak", "Majd Hawasly", "Mustafa Jarrar", "George Mikros", "Fadi Zaraket", "Mahmoud Alhirthani", "Mutaz al-Khatib", "Logan Cochrane", "Kareem Darwish", "Rashid Yahiaoui", "Firoj Alam"]
+  venue: arXiv
+  link: https://arxiv.org/abs/2604.05083
+  bibtex: "@misc{alam2026llmasajudgedeterministicmetricsmultilingual,\n    title={Beyond LLM-as-a-Judge:\
+    \ Deterministic Metrics for Multilingual Generative Text Evaluation}, \n    author={Firoj Alam and\
+    \ Gagan Bhatia and Sahinur Rahman Laskar and Shammur Absar Chowdhury},\n    year={2026},\n    eprint={2604.05083},\n\
+    \    archivePrefix={arXiv},\n    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2604.05083},\
+    \ \n}"
+- title: 'Advances in AI Systems on Islamic Knowledge Capabilities: A Critical Survey'
+  authors:
+  - Gagan Bhatia
+  - Hamdy Mubarak
+  - Majd Hawasly
+  - Mustafa Jarrar
+  - George Mikros
+  - Fadi Zaraket
+  - Mahmoud Alhirthani
+  - Mutaz al-Khatib
+  - Logan Cochrane
+  - Kareem Darwish
+  - Rashid Yahiaoui
+  - Firoj Alam
   year: 2026
-  venue: "TechRxiv"
-  link: "https://huggingface.co/datasets/QCRI/islamic-knowledge-ai-survey"
-
-- title: "Date Fragments: A Hidden Bottleneck of Tokenization for Temporal Reasoning"
-  authors: ["Gagan Bhatia", "Maxime Peyrard", "Wei Zhao"]
+  venue: TechRxiv
+  link: https://huggingface.co/datasets/QCRI/islamic-knowledge-ai-survey
+  bibtex: "@misc{bhatia2026advances,\n    title={Advances in AI Systems on Islamic Knowledge Capabilities:\
+    \ A Critical Survey},\n    author={Gagan Bhatia and Hamdy Mubarak and Majd Hawasly and Mustafa Jarrar\
+    \ and George Mikros and Fadi Zaraket and Mahmoud Alhirthani and Mutaz al-Khatib and Logan Cochrane\
+    \ and Kareem Darwish and Rashid Yahiaoui and Firoj Alam},\n    year={2026},\n    publisher={TechRxiv},\n\
+    \    note={Preprint},\n    url={https://huggingface.co/datasets/QCRI/islamic-knowledge-ai-survey}\n\
+    }"
+- title: 'Date Fragments: A Hidden Bottleneck of Tokenization for Temporal Reasoning'
+  authors:
+  - Gagan Bhatia
+  - Maxime Peyrard
+  - Wei Zhao
   year: 2025
-  venue: "EMNLP 2025"
-  link: "https://aclanthology.org/2025.emnlp-main.159.pdf"
-
-- title: "Swan and ArabicMTEB: Dialect-Aware, Arabic-Centric, Cross-Lingual, and Cross-Cultural Embedding Models and Benchmarks"
-  authors: ["Gagan Bhatia", "El Moatez Billah Nagoudi", "Abdellah El Mekki", "Fakhraddin Alwajih", "Muhammad Abdul-Mageed"]
+  venue: EMNLP 2025
+  link: https://aclanthology.org/2025.emnlp-main.159.pdf
+  bibtex: "@inproceedings{bhatia-etal-2025-date,\n    title = \"Date Fragments: A Hidden Bottleneck of\
+    \ Tokenization for Temporal Reasoning\",\n    author = \"Bhatia, Gagan  and\n    Peyrard, Maxime \
+    \ and\n    Zhao, Wei\",\n    editor = \"Christodoulopoulos, Christos  and\n    Chakraborty, Tanmoy\
+    \  and\n    Rose, Carolyn  and\n    Peng, Violet\",\n    booktitle = \"Proceedings of the 2025 Conference\
+    \ on Empirical Methods in Natural Language Processing\",\n    month = nov,\n    year = \"2025\",\n\
+    \    address = \"Suzhou, China\",\n    publisher = \"Association for Computational Linguistics\",\n\
+    \    url = \"https://aclanthology.org/2025.emnlp-main.159/\",\n    doi = \"10.18653/v1/2025.emnlp-main.159\"\
+    ,\n    pages = \"3201--3219\",\n    ISBN = \"979-8-89176-332-6\"\n}"
+- title: 'Swan and ArabicMTEB: Dialect-Aware, Arabic-Centric, Cross-Lingual, and Cross-Cultural Embedding
+    Models and Benchmarks'
+  authors:
+  - Gagan Bhatia
+  - El Moatez Billah Nagoudi
+  - Abdellah El Mekki
+  - Fakhraddin Alwajih
+  - Muhammad Abdul-Mageed
   year: 2025
-  venue: "NAACL 2025 (Findings)"
-  link: "https://aclanthology.org/2025.findings-naacl.263.pdf"
-
-- title: "DateLogicQA: Benchmarking Temporal Biases in Large Language Models"
-  authors: ["Gagan Bhatia", "MingZe Tang", "Cristina Mahanta", "Madiha Kazi", "Maxime Peyrard", "Wei Zhao"]
+  venue: NAACL 2025 (Findings)
+  link: https://aclanthology.org/2025.findings-naacl.263.pdf
+  bibtex: "@inproceedings{bhatia-etal-2025-swan,\n    title = \"Swan and {A}rabic{MTEB}: Dialect-Aware,\
+    \ {A}rabic-Centric, Cross-Lingual, and Cross-Cultural Embedding Models and Benchmarks\",\n    author\
+    \ = \"Bhatia, Gagan  and\n    Nagoudi, El Moatez Billah  and\n    El Mekki, Abdellah  and\n    Alwajih,\
+    \ Fakhraddin  and\n    Abdul-Mageed, Muhammad\",\n    editor = \"Chiruzzo, Luis  and\n    Ritter,\
+    \ Alan  and\n    Wang, Lu\",\n    booktitle = \"Findings of the Association for Computational Linguistics:\
+    \ NAACL 2025\",\n    month = apr,\n    year = \"2025\",\n    address = \"Albuquerque, New Mexico\"\
+    ,\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.findings-naacl.263/\"\
+    ,\n    doi = \"10.18653/v1/2025.findings-naacl.263\",\n    pages = \"4669--4685\",\n    ISBN = \"\
+    979-8-89176-195-7\"\n}"
+- title: 'DateLogicQA: Benchmarking Temporal Biases in Large Language Models'
+  authors:
+  - Gagan Bhatia
+  - MingZe Tang
+  - Cristina Mahanta
+  - Madiha Kazi
+  - Maxime Peyrard
+  - Wei Zhao
   year: 2025
-  venue: "NAACL 2025 (SRW)"
-  link: "https://aclanthology.org/2025.naacl-srw.32.pdf"
-
-- title: "Distributional Semantics Tracing: A Framework for Explaining Hallucinations in Large Language Models"
-  authors: ["Gagan Bhatia", "Somayajulu G Sripada", "Kevin Allan", "Jacobo Azcona"]
+  venue: NAACL 2025 (SRW)
+  link: https://aclanthology.org/2025.naacl-srw.32.pdf
+  bibtex: "@inproceedings{bhatia-etal-2025-datelogicqa,\n    title = \"{D}ate{L}ogic{QA}: Benchmarking\
+    \ Temporal Biases in Large Language Models\",\n    author = \"Bhatia, Gagan  and\n    Tang, MingZe\
+    \  and\n    Mahanta, Cristina  and\n    Kazi, Madiha  and\n    Peyrard, Maxime  and\n    Zhao, Wei\"\
+    ,\n    editor = \"Ebrahimi, Abteen  and\n    Haider, Samar  and\n    Liu, Emmy  and\n    Haider, Sammar\
+    \  and\n    Pacheco, Maria Leonor  and\n    Wein, Shira\",\n    booktitle = \"Proceedings of the 2025\
+    \ Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics:\
+    \ Human Language Technologies (Volume 4: Student Research Workshop)\",\n    month = apr,\n    year\
+    \ = \"2025\",\n    address = \"Albuquerque, USA\",\n    publisher = \"Association for Computational\
+    \ Linguistics\",\n    url = \"https://aclanthology.org/2025.naacl-srw.32/\",\n    doi = \"10.18653/v1/2025.naacl-srw.32\"\
+    ,\n    pages = \"321--332\",\n    ISBN = \"979-8-89176-192-6\"\n}"
+- title: 'Distributional Semantics Tracing: A Framework for Explaining Hallucinations in Large Language
+    Models'
+  authors:
+  - Gagan Bhatia
+  - Somayajulu G Sripada
+  - Kevin Allan
+  - Jacobo Azcona
   year: 2025
-  venue: "arXiv"
-  link: "https://arxiv.org/abs/2510.06107"
-
-- title: "FinTral: A Family of GPT-4 Level Multimodal Financial Large Language Models"
-  authors: ["Gagan Bhatia", "El Moatez Billah Nagoudi", "Hasan Cavusoglu", "Muhammad Abdul-Mageed"]
+  venue: arXiv
+  link: https://arxiv.org/abs/2510.06107
+  bibtex: "@misc{bhatia2026distributionalsemanticstracingframework,\n    title={Distributional Semantics\
+    \ Tracing: A Framework for Explaining Hallucinations in Large Language Models}, \n    author={Gagan\
+    \ Bhatia and Somayajulu G Sripada and Kevin Allan and Jacobo Azcona},\n    year={2026},\n    eprint={2510.06107},\n\
+    \    archivePrefix={arXiv},\n    primaryClass={cs.CL},\n    url={https://arxiv.org/abs/2510.06107},\
+    \ \n}"
+- title: 'FinTral: A Family of GPT-4 Level Multimodal Financial Large Language Models'
+  authors:
+  - Gagan Bhatia
+  - El Moatez Billah Nagoudi
+  - Hasan Cavusoglu
+  - Muhammad Abdul-Mageed
   year: 2024
-  venue: "ACL 2024 (Findings)"
-  link: "https://aclanthology.org/2024.findings-acl.774.pdf"
-
-- title: "Peacock: A Family of Arabic Multimodal Large Language Models and Benchmarks"
-  authors: ["Fakhraddin Alwajih", "El Moatez Billah Nagoudi", "Gagan Bhatia", "Abdelrahman Mohamed", "Muhammad Abdul-Mageed"]
+  venue: ACL 2024 (Findings)
+  link: https://aclanthology.org/2024.findings-acl.774.pdf
+  bibtex: "@inproceedings{bhatia-etal-2024-fintral,\n    title = \"{F}in{T}ral: A Family of {GPT}-4 Level\
+    \ Multimodal Financial Large Language Models\",\n    author = \"Bhatia, Gagan  and\n    Nagoudi, El\
+    \ Moatez Billah  and\n    Cavusoglu, Hasan  and\n    Abdul-Mageed, Muhammad\",\n    editor = \"Ku,\
+    \ Lun-Wei  and\n    Martins, Andre  and\n    Srikumar, Vivek\",\n    booktitle = \"Findings of the\
+    \ Association for Computational Linguistics: ACL 2024\",\n    month = aug,\n    year = \"2024\",\n\
+    \    address = \"Bangkok, Thailand\",\n    publisher = \"Association for Computational Linguistics\"\
+    ,\n    url = \"https://aclanthology.org/2024.findings-acl.774/\",\n    doi = \"10.18653/v1/2024.findings-acl.774\"\
+    ,\n    pages = \"13064--13087\"\n}"
+- title: 'Peacock: A Family of Arabic Multimodal Large Language Models and Benchmarks'
+  authors:
+  - Fakhraddin Alwajih
+  - El Moatez Billah Nagoudi
+  - Gagan Bhatia
+  - Abdelrahman Mohamed
+  - Muhammad Abdul-Mageed
   year: 2024
-  venue: "ACL 2024"
-  link: "https://aclanthology.org/2024.acl-long.689.pdf"
-
-- title: "Qalam: A Multimodal LLM for Arabic Optical Character and Handwriting Recognition"
-  authors: ["Gagan Bhatia", "El Moatez Billah Nagoudi", "Fakhraddin Alwajih", "Muhammad Abdul-Mageed"]
+  venue: ACL 2024
+  link: https://aclanthology.org/2024.acl-long.689.pdf
+  bibtex: "@inproceedings{alwajih-etal-2024-peacock,\n    title = \"Peacock: A Family of {A}rabic Multimodal\
+    \ Large Language Models and Benchmarks\",\n    author = \"Alwajih, Fakhraddin  and\n    Nagoudi, El\
+    \ Moatez Billah  and\n    Bhatia, Gagan  and\n    Mohamed, Abdelrahman  and\n    Abdul-Mageed, Muhammad\"\
+    ,\n    editor = \"Ku, Lun-Wei  and\n    Martins, Andre  and\n    Srikumar, Vivek\",\n    booktitle\
+    \ = \"Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume\
+    \ 1: Long Papers)\",\n    month = aug,\n    year = \"2024\",\n    address = \"Bangkok, Thailand\"\
+    ,\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.acl-long.689/\"\
+    ,\n    doi = \"10.18653/v1/2024.acl-long.689\",\n    pages = \"12753--12776\"\n}"
+- title: 'Qalam: A Multimodal LLM for Arabic Optical Character and Handwriting Recognition'
+  authors:
+  - Gagan Bhatia
+  - El Moatez Billah Nagoudi
+  - Fakhraddin Alwajih
+  - Muhammad Abdul-Mageed
   year: 2024
-  venue: "ArabicNLP 2024"
-  link: "https://aclanthology.org/2024.arabicnlp-1.19.pdf"
-
-- title: "Dallah: A Dialect-Aware Multimodal Large Language Model for Arabic"
-  authors: ["Fakhraddin Alwajih", "Gagan Bhatia", "Muhammad Abdul-Mageed"]
+  venue: ArabicNLP 2024
+  link: https://aclanthology.org/2024.arabicnlp-1.19.pdf
+  bibtex: "@inproceedings{bhatia-etal-2024-qalam,\n    title = \"Qalam: A Multimodal {LLM} for {A}rabic\
+    \ Optical Character and Handwriting Recognition\",\n    author = \"Bhatia, Gagan  and\n    Nagoudi,\
+    \ El Moatez Billah  and\n    Alwajih, Fakhraddin  and\n    Abdul-Mageed, Muhammad\",\n    editor =\
+    \ \"Habash, Nizar  and\n    Bouamor, Houda  and\n    Eskander, Ramy  and\n    Tomeh, Nadi  and\n \
+    \   Abu Farha, Ibrahim  and\n    Abdelali, Ahmed  and\n    Touileb, Samia  and\n    Hamed, Injy  and\n\
+    \    Onaizan, Yaser  and\n    Alhafni, Bashar  and\n    Antoun, Wissam  and\n    Khalifa, Salam  and\n\
+    \    Haddad, Hatem  and\n    Zitouni, Imed  and\n    AlKhamissi, Badr  and\n    Almatham, Rawan  and\n\
+    \    Mrini, Khalil\",\n    booktitle = \"Proceedings of the Second Arabic Natural Language Processing\
+    \ Conference\",\n    month = aug,\n    year = \"2024\",\n    address = \"Bangkok, Thailand\",\n  \
+    \  publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.arabicnlp-1.19/\"\
+    ,\n    doi = \"10.18653/v1/2024.arabicnlp-1.19\",\n    pages = \"210--224\"\n}"
+- title: 'Dallah: A Dialect-Aware Multimodal Large Language Model for Arabic'
+  authors:
+  - Fakhraddin Alwajih
+  - Gagan Bhatia
+  - Muhammad Abdul-Mageed
   year: 2024
-  venue: "ArabicNLP 2024"
-  link: "https://aclanthology.org/2024.arabicnlp-1.27.pdf"
-
-- title: "Beyond English: Evaluating LLMs for Arabic Grammatical Error Correction"
-  authors: ["Sang Kwon", "Gagan Bhatia", "El Moatez Billah Nagoudi", "Muhammad Abdul-Mageed"]
+  venue: ArabicNLP 2024
+  link: https://aclanthology.org/2024.arabicnlp-1.27.pdf
+  bibtex: "@inproceedings{alwajih-etal-2024-dallah,\n    title = \"Dallah: A Dialect-Aware Multimodal\
+    \ Large Language Model for {A}rabic\",\n    author = \"Alwajih, Fakhraddin  and\n    Bhatia, Gagan\
+    \  and\n    Abdul-Mageed, Muhammad\",\n    editor = \"Habash, Nizar  and\n    Bouamor, Houda  and\n\
+    \    Eskander, Ramy  and\n    Tomeh, Nadi  and\n    Abu Farha, Ibrahim  and\n    Abdelali, Ahmed \
+    \ and\n    Touileb, Samia  and\n    Hamed, Injy  and\n    Onaizan, Yaser  and\n    Alhafni, Bashar\
+    \  and\n    Antoun, Wissam  and\n    Khalifa, Salam  and\n    Haddad, Hatem  and\n    Zitouni, Imed\
+    \  and\n    AlKhamissi, Badr  and\n    Almatham, Rawan  and\n    Mrini, Khalil\",\n    booktitle =\
+    \ \"Proceedings of the Second Arabic Natural Language Processing Conference\",\n    month = aug,\n\
+    \    year = \"2024\",\n    address = \"Bangkok, Thailand\",\n    publisher = \"Association for Computational\
+    \ Linguistics\",\n    url = \"https://aclanthology.org/2024.arabicnlp-1.27/\",\n    doi = \"10.18653/v1/2024.arabicnlp-1.27\"\
+    ,\n    pages = \"320--336\"\n}"
+- title: 'Beyond English: Evaluating LLMs for Arabic Grammatical Error Correction'
+  authors:
+  - Sang Kwon
+  - Gagan Bhatia
+  - El Moatez Billah Nagoudi
+  - Muhammad Abdul-Mageed
   year: 2023
-  venue: "ArabicNLP 2023"
-  link: "https://aclanthology.org/2023.arabicnlp-1.9.pdf"
-
-- title: "SIDLR: Slot and Intent Detection Models for Low-Resource Language Varieties"
-  authors: ["Sang Yun Kwon", "Gagan Bhatia", "El Moatez Billah Nagoudi", "Alcides Alcoba Inciarte", "Muhammad Abdul-Mageed"]
+  venue: ArabicNLP 2023
+  link: https://aclanthology.org/2023.arabicnlp-1.9.pdf
+  bibtex: "@inproceedings{kwon-etal-2023-beyond,\n    title = \"Beyond {E}nglish: Evaluating {LLM}s for\
+    \ {A}rabic Grammatical Error Correction\",\n    author = \"Kwon, Sang  and\n    Bhatia, Gagan  and\n\
+    \    Nagoudi, El Moatez Billah  and\n    Abdul-Mageed, Muhammad\",\n    editor = \"Sawaf, Hassan \
+    \ and\n    El-Beltagy, Samhaa  and\n    Zaghouani, Wajdi  and\n    Magdy, Walid  and\n    Abdelali,\
+    \ Ahmed  and\n    Tomeh, Nadi  and\n    Abu Farha, Ibrahim  and\n    Habash, Nizar  and\n    Khalifa,\
+    \ Salam  and\n    Keleg, Amr  and\n    Haddad, Hatem  and\n    Zitouni, Imed  and\n    Mrini, Khalil\
+    \  and\n    Almatham, Rawan\",\n    booktitle = \"Proceedings of ArabicNLP 2023\",\n    month = dec,\n\
+    \    year = \"2023\",\n    address = \"Singapore (Hybrid)\",\n    publisher = \"Association for Computational\
+    \ Linguistics\",\n    url = \"https://aclanthology.org/2023.arabicnlp-1.9/\",\n    doi = \"10.18653/v1/2023.arabicnlp-1.9\"\
+    ,\n    pages = \"101--119\"\n}"
+- title: 'SIDLR: Slot and Intent Detection Models for Low-Resource Language Varieties'
+  authors:
+  - Sang Yun Kwon
+  - Gagan Bhatia
+  - El Moatez Billah Nagoudi
+  - Alcides Alcoba Inciarte
+  - Muhammad Abdul-Mageed
   year: 2023
-  venue: "VarDial 2023"
-  link: "https://aclanthology.org/2023.vardial-1.24.pdf"
-
-- title: "UBC-DLNLP at SemEval-2023 Task 12: Impact of Transfer Learning on African Sentiment Analysis"
-  authors: ["Gagan Bhatia", "Ife Adebara", "Abdelrahim Elmadany", "Muhammad Abdul-Mageed"]
+  venue: VarDial 2023
+  link: https://aclanthology.org/2023.vardial-1.24.pdf
+  bibtex: "@inproceedings{kwon-etal-2023-sidlr,\n    title = \"{SIDLR}: Slot and Intent Detection Models\
+    \ for Low-Resource Language Varieties\",\n    author = \"Kwon, Sang Yun  and\n    Bhatia, Gagan  and\n\
+    \    Nagoudi, Elmoatez Billah  and\n    Alcoba Inciarte, Alcides  and\n    Abdul-mageed, Muhammad\"\
+    ,\n    editor = {Scherrer, Yves  and\n    Jauhiainen, Tommi  and\n    Ljube{\\v{s}}i{\\'c}, Nikola\
+    \  and\n    Nakov, Preslav  and\n    Tiedemann, J{\\\"o}rg  and\n    Zampieri, Marcos},\n    booktitle\
+    \ = \"Tenth Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial 2023)\",\n    month\
+    \ = may,\n    year = \"2023\",\n    address = \"Dubrovnik, Croatia\",\n    publisher = \"Association\
+    \ for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.vardial-1.24/\",\n \
+    \   doi = \"10.18653/v1/2023.vardial-1.24\",\n    pages = \"241--250\"\n}"
+- title: 'UBC-DLNLP at SemEval-2023 Task 12: Impact of Transfer Learning on African Sentiment Analysis'
+  authors:
+  - Gagan Bhatia
+  - Ife Adebara
+  - Abdelrahim Elmadany
+  - Muhammad Abdul-Mageed
   year: 2023
-  venue: "SemEval 2023"
-  link: "https://aclanthology.org/2023.semeval-1.33.pdf"
+  venue: SemEval 2023
+  link: https://aclanthology.org/2023.semeval-1.33.pdf
+  bibtex: "@inproceedings{bhatia-etal-2023-ubc,\n    title = \"{UBC}-{DLNLP} at {S}em{E}val-2023 Task\
+    \ 12: Impact of Transfer Learning on {A}frican Sentiment Analysis\",\n    author = \"Bhatia, Gagan\
+    \  and\n    Adebara, Ife  and\n    Elmadany, Abdelrahim  and\n    Abdul-mageed, Muhammad\",\n    editor\
+    \ = {Ojha, Atul Kr.  and\n    Do{\\u{g}}ru{\\\"o}z, A. Seza  and\n    Da San Martino, Giovanni  and\n\
+    \    Tayyar Madabushi, Harish  and\n    Kumar, Ritesh  and\n    Sartori, Elisa},\n    booktitle =\
+    \ \"Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval-2023)\",\n    month\
+    \ = jul,\n    year = \"2023\",\n    address = \"Toronto, Canada\",\n    publisher = \"Association\
+    \ for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.semeval-1.33/\",\n \
+    \   doi = \"10.18653/v1/2023.semeval-1.33\",\n    pages = \"246--255\"\n}"

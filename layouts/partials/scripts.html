@@ -20,4 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   items.forEach(function (el) { observer.observe(el); });
 });
+
+document.addEventListener("click", function (e) {
+  var btn = e.target.closest(".copy-btn");
+  if (!btn) return;
+  var code = btn.parentElement.querySelector("code");
+  if (!code || !navigator.clipboard) return;
+  navigator.clipboard.writeText(code.textContent).then(function () {
+    btn.textContent = "Copied";
+    btn.classList.add("is-copied");
+    setTimeout(function () {
+      btn.textContent = "Copy";
+      btn.classList.remove("is-copied");
+    }, 1600);
+  });
+});
 </script>

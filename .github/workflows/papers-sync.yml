@@ -26,6 +26,9 @@ jobs:
           S2_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
         run: python scripts/sync_papers.py
 
+      - name: Fill in missing BibTeX
+        run: python scripts/fetch_bibtex.py
+
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
