@@ -361,3 +361,27 @@
     \ = jul,\n    year = \"2023\",\n    address = \"Toronto, Canada\",\n    publisher = \"Association\
     \ for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.semeval-1.33/\",\n \
     \   doi = \"10.18653/v1/2023.semeval-1.33\",\n    pages = \"246--255\"\n}"
+- title: Leveraging Vision-Language Pre-training for Human Activity Recognition in Still Images
+  authors:
+  - Cristina Mahanta
+  - Gagan Bhatia
+  year: 2025
+  venue: arXiv
+  link: https://arxiv.org/abs/2506.13458
+  bibtex: "@misc{mahanta2025leveragingvisionlanguagepretraininghuman,\n    title={Leveraging Vision-Language\
+    \ Pre-training for Human Activity Recognition in Still Images}, \n    author={Cristina Mahanta and\
+    \ Gagan Bhatia},\n    year={2025},\n    eprint={2506.13458},\n    archivePrefix={arXiv},\n    primaryClass={cs.CV},\n\
+    \    url={https://arxiv.org/abs/2506.13458}, \n}"
+- title: ChatGPT for Arabic Grammatical Error Correction
+  authors:
+  - S. Kwon
+  - Gagan Bhatia
+  - El Moatez Billah Nagoudi
+  - M. Abdul-Mageed
+  year: 2023
+  venue: arXiv
+  link: https://arxiv.org/abs/2308.04492
+  bibtex: "@misc{kwon2023chatgptarabicgrammaticalerror,\n    title={ChatGPT for Arabic Grammatical Error\
+    \ Correction}, \n    author={Sang Yun Kwon and Gagan Bhatia and El Moatez Billah Nagoud and Muhammad\
+    \ Abdul-Mageed},\n    year={2023},\n    eprint={2308.04492},\n    archivePrefix={arXiv},\n    primaryClass={cs.AI},\n\
+    \    url={https://arxiv.org/abs/2308.04492}, \n}"
