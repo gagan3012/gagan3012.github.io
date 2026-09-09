@@ -5,9 +5,9 @@ and deployed to GitHub Pages via GitHub Actions.
 
 - Content is edited via `data/papers.yaml`, `content/_index.md`, and the
   files under `static/` — see [UPDATING.md](UPDATING.md).
-- The CV (`static/files/cv.pdf`) is compiled daily from
+- The CV (`static/files/cv.pdf`) is compiled only when the source changes in
   [gagan3012/resume-v2](https://github.com/gagan3012/resume-v2) by
-  `.github/workflows/cv-sync.yml`.
+  `.github/workflows/cv-sync.yml` (a lightweight revision check runs daily).
 - New papers are pulled weekly from Semantic Scholar by
   `.github/workflows/papers-sync.yml` (`scripts/sync_papers.py`).
 

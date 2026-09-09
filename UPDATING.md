@@ -34,12 +34,19 @@ Edit the body of [`content/_index.md`](content/_index.md).
 
 ## Update your CV
 
-The CV is compiled automatically every day from the LaTeX source in
+The CV is compiled automatically when changes are detected in the LaTeX source in
 [gagan3012/resume-v2](https://github.com/gagan3012/resume-v2) by
-`.github/workflows/cv-sync.yml`, and copied to `static/files/cv.pdf`. Just
-push changes to `resume-v2` — no action needed here. To trigger an update
-immediately, run the "Sync CV from resume-v2" workflow manually from the
-Actions tab.
+`.github/workflows/cv-sync.yml`, and copied to `static/files/cv.pdf`. A lightweight
+daily check compares the upstream commit with `.github/cv-source-revision`.
+If they match, the workflow skips downloading the resume source, compiling,
+committing, and deploying. If they differ, it compiles that exact commit,
+records the revision after a successful build, and deploys the updated site.
+The first run initializes the revision record with one build.
+
+Push changes to `resume-v2` and they will be picked up by the next daily check.
+To check immediately, run the "Sync CV from resume-v2" workflow manually from
+the Actions tab. Manual runs also skip unchanged sources. To force a rebuild,
+delete `.github/cv-source-revision` and run the workflow again.
 
 ## Change your photo
 

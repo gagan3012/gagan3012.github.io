@@ -2,11 +2,16 @@ name: Sync CV from resume-v2
 
 on:
   schedule:
-    - cron: "0 6 * * *" # daily at 06:00 UTC
+    - cron: "0 6 * * *" # Check for source changes; skip unchanged CVs.
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
+
+concurrency:
+  group: cv-sync
+  cancel-in-progress: false
 
 jobs:
   build-cv:
@@ -14,14 +19,38 @@ jobs:
     steps:
       - name: Checkout site repo
         uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Check resume source revision
+        id: source
+        shell: bash
+        run: |
+          set -euo pipefail
+          revision=$(git ls-remote https://github.com/gagan3012/resume-v2.git HEAD | awk '{print $1}')
+          if [[ ! "$revision" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "Could not resolve the resume source revision" >&2
+            exit 1
+          fi
+          previous=$(cat .github/cv-source-revision 2>/dev/null || true)
+          echo "revision=$revision" >> "$GITHUB_OUTPUT"
+          if [[ "$revision" == "$previous" ]]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Resume source is unchanged; skipping CV sync." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Checkout resume-v2 source
+        if: steps.source.outputs.changed == 'true'
         uses: actions/checkout@v4
         with:
           repository: gagan3012/resume-v2
+          ref: ${{ steps.source.outputs.revision }}
           path: resume-src
 
       - name: Compile CV to PDF
+        if: steps.source.outputs.changed == 'true'
         uses: xu-cheng/latex-action@v3
         with:
           root_file: resume.tex
@@ -29,14 +58,27 @@ jobs:
           latexmk_use_xelatex: true
 
       - name: Copy PDF into site
+        if: steps.source.outputs.changed == 'true'
+        env:
+          SOURCE_REVISION: ${{ steps.source.outputs.revision }}
         run: |
           mkdir -p static/files
           cp resume-src/resume.pdf static/files/cv.pdf
+          printf '%s\n' "$SOURCE_REVISION" > .github/cv-source-revision
 
-      - name: Commit if changed
+      - name: Commit CV and source revision
+        if: steps.source.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add static/files/cv.pdf
+          git add static/files/cv.pdf .github/cv-source-revision
           git diff --cached --quiet || git commit -m "chore: sync CV from resume-v2"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      # Commits made with GITHUB_TOKEN do not trigger push workflows.
+      - name: Deploy updated CV
+        if: steps.source.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
