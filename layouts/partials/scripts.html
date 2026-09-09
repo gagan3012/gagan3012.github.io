@@ -2,6 +2,8 @@
   .reveal { opacity: 1 !important; transform: none !important; }
   .pub-list.is-collapsed .pub-hidden { display: grid !important; }
   .show-all { display: none !important; }
+  .bib-trigger, .nav-toggle { display: none !important; }
+  .nav-menu { display: flex !important; position: static !important; }
 </style></noscript>
 <script>
 document.addEventListener("click", function (e) {
@@ -10,32 +12,12 @@ document.addEventListener("click", function (e) {
   var list = document.getElementById(btn.getAttribute("data-target"));
   if (!list) return;
   var collapsed = list.classList.toggle("is-collapsed");
+  btn.setAttribute("aria-expanded", String(!collapsed));
   btn.textContent = collapsed ? btn.getAttribute("data-more") : btn.getAttribute("data-less");
-  if (collapsed) list.scrollIntoView({ block: "start", behavior: "smooth" });
+  if (collapsed) list.scrollIntoView({ block: "start", behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
 });
 </script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  var items = document.querySelectorAll(".reveal");
-  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  if (reduced || !("IntersectionObserver" in window)) {
-    items.forEach(function (el) { el.classList.add("is-visible"); });
-    return;
-  }
-
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
-
-  items.forEach(function (el) { observer.observe(el); });
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   var modal = document.getElementById("bib-modal");
   if (!modal) return;
@@ -73,7 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
           btn.textContent = "Copy";
           btn.classList.remove("is-copied");
         }, 1600);
+      }).catch(function () {
+        btn.textContent = "Select and copy the citation above";
       });
+    } else if (btn) {
+      btn.textContent = "Select and copy the citation above";
     }
   });
 

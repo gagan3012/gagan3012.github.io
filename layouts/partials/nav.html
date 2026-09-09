@@ -1,7 +1,7 @@
-<nav class="site-nav">
+<nav class="site-nav" aria-label="Main navigation">
   <div class="nav-inner">
     <a class="nav-brand" href="{{ "/" | relLangURL }}">
-      <span class="monogram">GB</span>
+      <span class="monogram" aria-hidden="true">gb.</span>
       <span>{{ .Site.Params.author }}</span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
@@ -30,6 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
       });
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && menu.classList.contains("is-open")) {
+        menu.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.focus();
+      }
     });
   }
 

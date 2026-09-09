@@ -9,20 +9,25 @@
       <div class="hero-text">
         <p class="hero-eyebrow">{{ .Site.Params.eyebrow }}</p>
         <h1>{{ .Site.Params.author }}</h1>
-        <p class="hero-role">{{ .Site.Params.description }}</p>
         {{ with .Site.Params.tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
+        <p class="hero-role">{{ .Site.Params.description }}</p>
+        <div class="hero-cta">
+          <a class="primary-button" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
+          <a class="cv-button" href="{{ "files/cv.pdf" | relURL }}">Download CV <span aria-hidden="true">↓</span></a>
+        </div>
         <div class="hero-links">
-          <a class="cv-button" href="{{ "files/cv.pdf" | relURL }}">CV (PDF)</a>
           <a href="https://github.com/gagan3012" target="_blank" rel="noopener">GitHub</a>
           <a href="https://scholar.google.com/citations?user=2Z0KWkEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
           <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:{{ .Site.Params.email }}">Email</a>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="{{ "images/photo.jpg" | relURL }}" alt="Portrait of {{ .Site.Params.author }}" width="224" height="272">
-      </div>
+      <figure class="hero-photo">
+        <img src="{{ "images/photo.jpg" | relURL }}" alt="Portrait of {{ .Site.Params.author }}" width="800" height="800" fetchpriority="high">
+        <figcaption><span>Language. Learning. Time.</span><span aria-hidden="true">01 / GB</span></figcaption>
+      </figure>
     </div>
+    <div class="hero-footnote"><span>Artificial intelligence &amp; natural language processing</span><a href="#bio">A little about me <span aria-hidden="true">↓</span></a></div>
   </div>
 </section>
 
@@ -46,7 +51,7 @@
   <div class="wrap reveal">
     <div class="section-head">
       <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
-      <h2>Publications</h2>
+      <h2>Publications<span class="section-count">{{ len $papers }} papers</span></h2>
     </div>
 
     {{/* Flatten to one list, newest year first, keeping file order within a year. */}}
@@ -66,7 +71,7 @@
       {{ end }}
       {{ $preprint := in $preprintVenues (lower $p.venue) }}
       <li class="pub-item{{ if $hidden }} pub-hidden{{ end }}">
-        <div class="pub-venue{{ if $preprint }} is-preprint{{ end }}">[{{ $p.venue }}]</div>
+        <div class="pub-venue{{ if $preprint }} is-preprint{{ end }}">{{ $p.venue }}</div>
         <div class="pub-body">
           {{ if $p.link }}
           <a class="pub-title" href="{{ $p.link }}" target="_blank" rel="noopener">{{ $p.title }}</a>
@@ -91,7 +96,7 @@
 
     {{ if gt (len $flat) $limit }}
     <button class="show-all" type="button" data-target="pub-list"
-            data-more="Show all {{ len $flat }} publications" data-less="Show fewer">
+            aria-controls="pub-list" aria-expanded="false" data-more="Show all {{ len $flat }} publications" data-less="Show fewer">
       Show all {{ len $flat }} publications
     </button>
     {{ end }}
@@ -110,7 +115,7 @@
     <ul class="simple-list">
       {{ range $experience }}
       <li class="row-item">
-        <div class="row-tag">[{{ .period }}]</div>
+        <div class="row-tag">{{ .period }}</div>
         <div>
           <span class="item-title">{{ .role }}</span>
           <span class="item-meta">{{ .org }}{{ with .location }} &middot; {{ . }}{{ end }}</span>
@@ -138,7 +143,7 @@
     <ul class="simple-list">
       {{ range $awards }}
       <li class="row-item">
-        <div class="row-tag">[{{ with .detail }}{{ . }}{{ else }}{{ .year }}{{ end }}]</div>
+        <div class="row-tag">{{ with .detail }}{{ . }}{{ else }}{{ .year }}{{ end }}</div>
         <div>
           <span class="item-title">{{ .name }}</span>
           {{ with .year }}<span class="item-meta">{{ . }}</span>{{ end }}
@@ -243,7 +248,8 @@
       <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>Contact</h2>
     </div>
-    <a class="contact-email" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    <p class="contact-heading">Good research starts<br>with a conversation.</p>
+    <a class="contact-email" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }} <span aria-hidden="true">↗</span></a>
     <div class="hero-links">
       <a href="https://github.com/gagan3012" target="_blank" rel="noopener">GitHub</a>
       <a href="https://scholar.google.com/citations?user=2Z0KWkEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
@@ -259,7 +265,7 @@
     </div>
     <pre><code id="bib-modal-code"></code></pre>
     <div class="bib-modal-foot">
-      <button class="copy-btn" type="button">Copy</button>
+      <button class="copy-btn" type="button" aria-live="polite">Copy</button>
     </div>
   </div>
 </dialog>
