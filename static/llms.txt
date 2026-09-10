@@ -2,9 +2,11 @@
 
 Gagan Bhatia is a first-year PhD candidate at the Chair of Computer Science
 and Artificial Intelligence (CSAI), University of Technology Nuremberg,
-advised by Steffen Eger. His research covers evaluation metrics for
-generative text and multimodal models, temporal reasoning and tokenisation
-in large language models, and multilingual and Arabic NLP.
+advised by Steffen Eger. His current research focuses on social biases in
+large language models, model interpretability, and chain-of-thought
+monitorability. His broader work covers evaluation metrics for generative
+text and multimodal models, temporal reasoning and tokenisation in large
+language models, and multilingual and Arabic NLP.
 
 Key pages:
 - Home: https://gagan3012.github.io/

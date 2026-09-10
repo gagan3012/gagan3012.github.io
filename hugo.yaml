@@ -8,13 +8,13 @@ params:
   author: "Gagan Bhatia"
   email: "gbhatia880@gmail.com"
   eyebrow: "PhD Candidate · Nuremberg, Germany"
-  tagline: "I study how large language models evaluate generated text and reason about time and language change."
+  tagline: "I study social biases, model interpretability, and chain-of-thought monitorability in large language models."
   institution: "University of Technology Nuremberg"
   interests:
-    - "Artificial Intelligence"
-    - "Machine Learning"
-    - "Natural Language Processing"
-    - "Data Science"
+    - "Social biases in LLMs"
+    - "Model interpretability"
+    - "Chain-of-thought monitorability"
+    - "Multilingual NLP & evaluation"
   mysite:
     credit: false
     discovery: false
