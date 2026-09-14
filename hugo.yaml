@@ -8,7 +8,8 @@ params:
   author: "Gagan Bhatia"
   email: "gbhatia880@gmail.com"
   eyebrow: "PhD Candidate · Nuremberg, Germany"
-  tagline: "I study social biases, model interpretability, and chain-of-thought monitorability in large language models."
+  tagline: "I study LLM interpretability, social biases, and chain-of-thought monitorability."
+  availability: "Open to research internships in AI and NLP."
   institution: "University of Technology Nuremberg"
   interests:
     - "Social biases in LLMs"

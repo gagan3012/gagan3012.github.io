@@ -11,15 +11,16 @@
         <h1>{{ .Site.Params.author }}</h1>
         {{ with .Site.Params.tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
         <p class="hero-role">{{ .Site.Params.description }}</p>
+        {{ with .Site.Params.availability }}<p class="hero-availability">{{ . }}</p>{{ end }}
         <div class="hero-cta">
-          <a class="primary-button" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
-          <a class="cv-button" href="{{ "files/cv.pdf" | relURL }}">Download CV <span aria-hidden="true">↓</span></a>
+          <a class="primary-button" href="mailto:{{ .Site.Params.email }}">Contact me <span aria-hidden="true">↗</span></a>
+          <a class="cv-button" href="{{ "files/cv.pdf" | relURL }}">View CV <span aria-hidden="true">↗</span></a>
         </div>
         <div class="hero-links">
+          <a href="#research">Research</a>
           <a href="https://github.com/gagan3012" target="_blank" rel="noopener">GitHub</a>
           <a href="https://scholar.google.com/citations?user=2Z0KWkEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
           <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:{{ .Site.Params.email }}">Email</a>
         </div>
       </div>
       <figure class="hero-photo">
@@ -27,10 +28,30 @@
         <figcaption><span>Understanding model behavior.</span><span aria-hidden="true">01 / GB</span></figcaption>
       </figure>
     </div>
-    <div class="hero-footnote"><span>Artificial intelligence &amp; natural language processing</span><a href="#bio">A little about me <span aria-hidden="true">↓</span></a></div>
+    <div class="hero-footnote"><span>Artificial intelligence &amp; natural language processing</span><a href="#selected-work">Selected contributions <span aria-hidden="true">↓</span></a></div>
   </div>
 </section>
 
+{{ with .Site.Data.highlights }}
+<section id="selected-work" class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
+      <h2>Selected work</h2>
+    </div>
+    <ul class="work-highlights">
+      {{ range . }}
+      <li>
+        <h3>{{ .title }}</h3>
+        <p>{{ .summary }}</p>
+        <a href="{{ .url }}">{{ .label }} <span aria-hidden="true">↗</span></a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+{{ end }}
 <section id="bio" class="section">
   <div class="wrap reveal">
     <div class="section-head">
@@ -248,7 +269,8 @@
       <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
       <h2>Contact</h2>
     </div>
-    <p class="contact-heading">Good research starts<br>with a conversation.</p>
+    <p class="contact-heading">Research &amp; collaboration</p>
+    <p class="contact-note">I welcome enquiries about research internships and collaborations in LLM interpretability, evaluation, and reliable AI systems.</p>
     <a class="contact-email" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }} <span aria-hidden="true">↗</span></a>
     <div class="hero-links">
       <a href="https://github.com/gagan3012" target="_blank" rel="noopener">GitHub</a>

@@ -1,5 +1,6 @@
 ---
 title: "Gagan Bhatia"
+description: "Doctoral researcher in LLM interpretability, social biases, and chain-of-thought monitorability. Open to research internships in AI and NLP."
 ---
 
 I am a first-year PhD candidate at the Chair of Computer Science and Artificial Intelligence (CSAI), University of Technology Nuremberg, advised by [Steffen Eger](https://www.utn.de/person/prof-dr-steffen-eger/). My current research focuses on social biases in large language models, model interpretability, and chain-of-thought monitorability: understanding model behavior and what we can learn by monitoring the reasoning models produce.

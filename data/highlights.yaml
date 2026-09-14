@@ -1,0 +1,15 @@
+# Selected research and engineering contributions.
+- title: "Agentic retrieval-augmented generation"
+  summary: "At Qatar Computing Research Institute, I contributed retrieval and verification components to a production multi-agent question-answering platform serving over 1.9 million requests in under a year."
+  url: "https://aclanthology.org/2026.acl-industry.109.pdf"
+  label: "Read the paper"
+
+- title: "Temporal reasoning in LLMs"
+  summary: "I investigate the roles of tokenisation and temporal representations in LLM reasoning, using attention-based interpretability methods to analyse model behavior."
+  url: "https://arxiv.org/abs/2603.19017"
+  label: "Read the paper"
+
+- title: "Production machine learning"
+  summary: "At Xtract One, I trained and deployed a Vision Transformer for image manipulation detection via a REST API on AWS, and developed a document intelligence pipeline processing over 10,000 documents daily."
+  url: "#experience"
+  label: "View experience"
