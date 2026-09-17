@@ -1,7 +1,7 @@
 # Publications.
 # venue: short label shown next to the paper — "arXiv" for preprints,
 #        otherwise the conference/journal (e.g. "EMNLP 2025").
-# Papers are grouped by year automatically; order within a year follows this file.
+# Papers are sorted by year and month, newest first; unknown months come last.
 # bibtex: filled in by scripts/fetch_bibtex.py; hand-edits are preserved.
 - title: From RAG to Agentic RAG for Faithful Islamic Question Answering
   authors:
@@ -17,6 +17,7 @@
   - Rashid Yahiaoui
   - Firoj Alam
   year: 2026
+  month: 7
   venue: ACL 2026 (Findings)
   link: https://aclanthology.org/2026.findings-acl.1317.pdf
   bibtex: "@inproceedings{bhatia-etal-2026-rag,\n    title = \"From {RAG} to Agentic {RAG} for Faithful\
@@ -42,6 +43,7 @@
   - Kareem Darwish
   - Firoj Alam
   year: 2026
+  month: 7
   venue: ACL 2026 (Industry Track)
   link: https://aclanthology.org/2026.acl-industry.109.pdf
   bibtex: "@inproceedings{abbas-etal-2026-fanar,\n    title = \"Fanar-Sadiq: A Multi-Agent Architecture\
@@ -71,6 +73,7 @@
   - Yufang Hou
   - Steffen Eger
   year: 2026
+  month: 6
   venue: EMNLP 2026
   link: https://arxiv.org/abs/2606.02255
   bibtex: "@inproceedings{kunilovskaya-etal-2026-annotates,\n    title = \"Who Annotates in NLP? A Large-scale\
@@ -89,6 +92,7 @@
   - Maxime Peyrard
   - Wei Zhao
   year: 2026
+  month: 3
   venue: EMNLP 2026 (Findings)
   link: https://arxiv.org/abs/2603.19017
   bibtex: "@inproceedings{bhatia-etal-2026-really,\n    title = \"What Really Controls Temporal Reasoning\
@@ -104,6 +108,7 @@
   - Simone Paolo Ponzetto
   - Steffen Eger
   year: 2026
+  month: 8
   venue: arXiv
   link: https://arxiv.org/abs/2608.03507
   bibtex: "@misc{bhatia2026chronolensmeasuringlanguagechange,\n    title={ChronoLens: Measuring Language\
@@ -116,6 +121,7 @@
   - Gagan Bhatia
   - Steffen Eger
   year: 2026
+  month: 1
   venue: arXiv
   link: https://arxiv.org/abs/2601.04946
   bibtex: "@misc{roy2026prototypicalitybiasrevealsblindspots,\n    title={Prototypicality Bias Reveals\
@@ -129,6 +135,7 @@
   - Sahinur Rahman Laskar
   - Shammur Absar Chowdhury
   year: 2026
+  month: 4
   venue: arXiv
   link: https://arxiv.org/abs/2604.05083
   bibtex: "@misc{alam2026llmasajudgedeterministicmetricsmultilingual,\n    title={Beyond LLM-as-a-Judge:\
@@ -165,6 +172,7 @@
   - Maxime Peyrard
   - Wei Zhao
   year: 2025
+  month: 11
   venue: EMNLP 2025
   link: https://aclanthology.org/2025.emnlp-main.159.pdf
   bibtex: "@inproceedings{bhatia-etal-2025-date,\n    title = \"Date Fragments: A Hidden Bottleneck of\
@@ -184,6 +192,7 @@
   - Fakhraddin Alwajih
   - Muhammad Abdul-Mageed
   year: 2025
+  month: 4
   venue: NAACL 2025 (Findings)
   link: https://aclanthology.org/2025.findings-naacl.263.pdf
   bibtex: "@inproceedings{bhatia-etal-2025-swan,\n    title = \"Swan and {A}rabic{MTEB}: Dialect-Aware,\
@@ -204,6 +213,7 @@
   - Maxime Peyrard
   - Wei Zhao
   year: 2025
+  month: 4
   venue: NAACL 2025 (SRW)
   link: https://aclanthology.org/2025.naacl-srw.32.pdf
   bibtex: "@inproceedings{bhatia-etal-2025-datelogicqa,\n    title = \"{D}ate{L}ogic{QA}: Benchmarking\
@@ -224,6 +234,7 @@
   - Kevin Allan
   - Jacobo Azcona
   year: 2025
+  month: 10
   venue: arXiv
   link: https://arxiv.org/abs/2510.06107
   bibtex: "@misc{bhatia2026distributionalsemanticstracingframework,\n    title={Distributional Semantics\
@@ -238,6 +249,7 @@
   - Hasan Cavusoglu
   - Muhammad Abdul-Mageed
   year: 2024
+  month: 8
   venue: ACL 2024 (Findings)
   link: https://aclanthology.org/2024.findings-acl.774.pdf
   bibtex: "@inproceedings{bhatia-etal-2024-fintral,\n    title = \"{F}in{T}ral: A Family of {GPT}-4 Level\
@@ -256,6 +268,7 @@
   - Abdelrahman Mohamed
   - Muhammad Abdul-Mageed
   year: 2024
+  month: 8
   venue: ACL 2024
   link: https://aclanthology.org/2024.acl-long.689.pdf
   bibtex: "@inproceedings{alwajih-etal-2024-peacock,\n    title = \"Peacock: A Family of {A}rabic Multimodal\
@@ -273,6 +286,7 @@
   - Fakhraddin Alwajih
   - Muhammad Abdul-Mageed
   year: 2024
+  month: 8
   venue: ArabicNLP 2024
   link: https://aclanthology.org/2024.arabicnlp-1.19.pdf
   bibtex: "@inproceedings{bhatia-etal-2024-qalam,\n    title = \"Qalam: A Multimodal {LLM} for {A}rabic\
@@ -292,6 +306,7 @@
   - Gagan Bhatia
   - Muhammad Abdul-Mageed
   year: 2024
+  month: 8
   venue: ArabicNLP 2024
   link: https://aclanthology.org/2024.arabicnlp-1.27.pdf
   bibtex: "@inproceedings{alwajih-etal-2024-dallah,\n    title = \"Dallah: A Dialect-Aware Multimodal\
@@ -312,6 +327,7 @@
   - El Moatez Billah Nagoudi
   - Muhammad Abdul-Mageed
   year: 2023
+  month: 12
   venue: ArabicNLP 2023
   link: https://aclanthology.org/2023.arabicnlp-1.9.pdf
   bibtex: "@inproceedings{kwon-etal-2023-beyond,\n    title = \"Beyond {E}nglish: Evaluating {LLM}s for\
@@ -332,6 +348,7 @@
   - Alcides Alcoba Inciarte
   - Muhammad Abdul-Mageed
   year: 2023
+  month: 5
   venue: VarDial 2023
   link: https://aclanthology.org/2023.vardial-1.24.pdf
   bibtex: "@inproceedings{kwon-etal-2023-sidlr,\n    title = \"{SIDLR}: Slot and Intent Detection Models\
@@ -350,6 +367,7 @@
   - Abdelrahim Elmadany
   - Muhammad Abdul-Mageed
   year: 2023
+  month: 7
   venue: SemEval 2023
   link: https://aclanthology.org/2023.semeval-1.33.pdf
   bibtex: "@inproceedings{bhatia-etal-2023-ubc,\n    title = \"{UBC}-{DLNLP} at {S}em{E}val-2023 Task\
@@ -366,6 +384,7 @@
   - Cristina Mahanta
   - Gagan Bhatia
   year: 2025
+  month: 6
   venue: arXiv
   link: https://arxiv.org/abs/2506.13458
   bibtex: "@misc{mahanta2025leveragingvisionlanguagepretraininghuman,\n    title={Leveraging Vision-Language\
@@ -379,6 +398,7 @@
   - El Moatez Billah Nagoudi
   - M. Abdul-Mageed
   year: 2023
+  month: 8
   venue: arXiv
   link: https://arxiv.org/abs/2308.04492
   bibtex: "@misc{kwon2023chatgptarabicgrammaticalerror,\n    title={ChatGPT for Arabic Grammatical Error\

@@ -12,12 +12,15 @@ Edit [`data/papers.yaml`](data/papers.yaml) and add a new entry:
 - title: "Paper Title Here"
   authors: ["Gagan Bhatia", "Coauthor Name"]
   year: 2026
+  month: 9 # publication month (1–12), when known
   venue: "arXiv" # or the conference/journal, e.g. "EMNLP 2025"
   link: "https://arxiv.org/abs/xxxx.xxxxx"
 ```
 
-Papers are grouped by year automatically, newest first; within a year they
-appear in the order they're listed in the file. The `venue` label is shown as
+Papers are sorted automatically by year and month, newest first. Use the
+publication month from the citation, or the submission month for an arXiv
+preprint. Papers without a known month appear last within their year.
+The `venue` label is shown as
 a small tag next to each paper — write `arXiv` (or `TechRxiv`) for preprints,
 which renders as a plain outlined tag, and a real venue name for anything
 peer-reviewed, which renders in the accent colour.

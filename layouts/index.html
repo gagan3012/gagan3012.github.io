@@ -75,11 +75,13 @@
       <h2>Publications<span class="section-count">{{ len $papers }} papers</span></h2>
     </div>
 
-    {{/* Flatten to one list, newest year first, keeping file order within a year. */}}
-    {{ $years := slice }}
-    {{ range $papers }}{{ if not (in $years .year) }}{{ $years = $years | append .year }}{{ end }}{{ end }}
+    {{/* Sort by year and month, newest first. Unknown months follow dated papers. */}}
     {{ $flat := slice }}
-    {{ range $y := sort $years "value" "desc" }}{{ $flat = $flat | append (where $papers "year" $y) }}{{ end }}
+    {{ range $papers }}
+      {{ $sortDate := add (mul (int .year) 100) (int (.month | default 0)) }}
+      {{ $flat = $flat | append (merge . (dict "sortDate" $sortDate)) }}
+    {{ end }}
+    {{ $flat = sort $flat "sortDate" "desc" }}
     {{ $limit := 6 }}
     {{ $shown := newScratch }}{{ $shown.Set "year" 0 }}
 

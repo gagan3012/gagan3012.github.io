@@ -144,7 +144,7 @@ def main():
         f.write("# Publications.\n")
         f.write('# venue: short label shown next to the paper — "arXiv" for preprints,\n')
         f.write('#        otherwise the conference/journal (e.g. "EMNLP 2025").\n')
-        f.write("# Papers are grouped by year automatically; order within a year follows this file.\n")
+        f.write("# Papers are sorted by year and month, newest first; unknown months come last.\n")
         yaml.safe_dump(updated, f, sort_keys=False, default_flow_style=False, allow_unicode=True)
 
     print(f"Added {len(new_entries)} new paper(s):")
