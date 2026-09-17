@@ -20,6 +20,7 @@
   month: 7
   venue: ACL 2026 (Findings)
   link: https://aclanthology.org/2026.findings-acl.1317.pdf
+  summary: "Introduces IslamicFaithQA and an agentic retrieval framework that improves evidence-grounded Islamic question answering in Arabic and English."
   bibtex: "@inproceedings{bhatia-etal-2026-rag,\n    title = \"From {RAG} to Agentic {RAG} for Faithful\
     \ Islamic Question Answering\",\n    author = \"Bhatia, Gagan  and\n    Mubarak, Hamdy  and\n    Jarrar,\
     \ Mustafa  and\n    Mikros, George  and\n    Zaraket, Fadi  and\n    Alhirthani, Mahmoud  and\n  \
@@ -46,6 +47,7 @@
   month: 7
   venue: ACL 2026 (Industry Track)
   link: https://aclanthology.org/2026.acl-industry.109.pdf
+  summary: "Combines specialized agents, verified citations, and rule-based calculators to answer Islamic questions in Arabic and English."
   bibtex: "@inproceedings{abbas-etal-2026-fanar,\n    title = \"Fanar-Sadiq: A Multi-Agent Architecture\
     \ for Grounded Islamic {QA}\",\n    author = \"Abbas, Ummar  and\n    Ouzzani, Mourad  and\n    Eltabakh,\
     \ Mohamed Y.  and\n    Sinan, Omar  and\n    Bhatia, Gagan  and\n    Mubarak, Hamdy  and\n    Hawasly,\
@@ -76,6 +78,7 @@
   month: 6
   venue: EMNLP 2026
   link: https://arxiv.org/abs/2606.02255
+  summary: "Audits how NLP papers report human annotation, revealing widespread gaps in annotator backgrounds, training, compensation, and quality checks."
   bibtex: "@inproceedings{kunilovskaya-etal-2026-annotates,\n    title = \"Who Annotates in NLP? A Large-scale\
     \ Assessment of Human Annotation Reporting between 2018 and 2025\",\n    author = \"Maria Kunilovskaya\
     \ and\n    Gagan Bhatia and\n    Lisa Sophie Albertelli and\n    Yanran Chen and\n    Christian Greisinger\
@@ -95,6 +98,7 @@
   month: 3
   venue: EMNLP 2026 (Findings)
   link: https://arxiv.org/abs/2603.19017
+  summary: "Introduces MultiTempBench to examine how date tokenization and internal representations affect temporal reasoning across languages and calendars."
   bibtex: "@inproceedings{bhatia-etal-2026-really,\n    title = \"What Really Controls Temporal Reasoning\
     \ in Large Language Models: Tokenisation or Representation of Time?\",\n    author = \"Gagan Bhatia\
     \ and\n    Ahmad Muhammad Isa and\n    Maxime Peyrard and\n    Wei Zhao\",\n    booktitle = \"Findings\
@@ -111,6 +115,7 @@
   month: 8
   venue: arXiv
   link: https://arxiv.org/abs/2608.03507
+  summary: "Uses interpretable multilingual representations to compare changes in grammar, meaning, and language use across two centuries of parliamentary text."
   bibtex: "@misc{bhatia2026chronolensmeasuringlanguagechange,\n    title={ChronoLens: Measuring Language\
     \ Change Across Time, Languages, and Linguistic Levels}, \n    author={Gagan Bhatia and Julian Schlenker\
     \ and Simone Paolo Ponzetto and Steffen Eger},\n    year={2026},\n    eprint={2608.03507},\n    archivePrefix={arXiv},\n\
@@ -124,6 +129,7 @@
   month: 1
   venue: arXiv
   link: https://arxiv.org/abs/2601.04946
+  summary: "Shows that image evaluation metrics can favor stereotypical but incorrect images, and introduces a benchmark and mitigation method."
   bibtex: "@misc{roy2026prototypicalitybiasrevealsblindspots,\n    title={Prototypicality Bias Reveals\
     \ Blindspots in Multimodal Evaluation Metrics}, \n    author={Subhadeep Roy and Gagan Bhatia and Steffen\
     \ Eger},\n    year={2026},\n    eprint={2601.04946},\n    archivePrefix={arXiv},\n    primaryClass={cs.CV},\n\
@@ -138,6 +144,7 @@
   month: 4
   venue: arXiv
   link: https://arxiv.org/abs/2604.05083
+  summary: "Introduces OmniScore, lightweight deterministic metrics for reproducible multilingual evaluation of generated text."
   bibtex: "@misc{alam2026llmasajudgedeterministicmetricsmultilingual,\n    title={Beyond LLM-as-a-Judge:\
     \ Deterministic Metrics for Multilingual Generative Text Evaluation}, \n    author={Firoj Alam and\
     \ Gagan Bhatia and Sahinur Rahman Laskar and Shammur Absar Chowdhury},\n    year={2026},\n    eprint={2604.05083},\n\
@@ -158,8 +165,10 @@
   - Rashid Yahiaoui
   - Firoj Alam
   year: 2026
+  month: 2
   venue: TechRxiv
   link: https://huggingface.co/datasets/QCRI/islamic-knowledge-ai-survey
+  summary: "Surveys 160 studies on AI for Islamic knowledge, organizing methods and identifying gaps in grounding, evaluation, and trustworthiness."
   bibtex: "@misc{bhatia2026advances,\n    title={Advances in AI Systems on Islamic Knowledge Capabilities:\
     \ A Critical Survey},\n    author={Gagan Bhatia and Hamdy Mubarak and Majd Hawasly and Mustafa Jarrar\
     \ and George Mikros and Fadi Zaraket and Mahmoud Alhirthani and Mutaz al-Khatib and Logan Cochrane\
@@ -175,6 +184,7 @@
   month: 11
   venue: EMNLP 2025
   link: https://aclanthology.org/2025.emnlp-main.159.pdf
+  summary: "Shows how fragmented date tokens hinder temporal reasoning and traces how language models reconstruct date components internally."
   bibtex: "@inproceedings{bhatia-etal-2025-date,\n    title = \"Date Fragments: A Hidden Bottleneck of\
     \ Tokenization for Temporal Reasoning\",\n    author = \"Bhatia, Gagan  and\n    Peyrard, Maxime \
     \ and\n    Zhao, Wei\",\n    editor = \"Christodoulopoulos, Christos  and\n    Chakraborty, Tanmoy\
@@ -195,6 +205,7 @@
   month: 4
   venue: NAACL 2025 (Findings)
   link: https://aclanthology.org/2025.findings-naacl.263.pdf
+  summary: "Introduces Arabic embedding models and a 94-dataset benchmark covering dialects, cross-language tasks, and cultural contexts."
   bibtex: "@inproceedings{bhatia-etal-2025-swan,\n    title = \"Swan and {A}rabic{MTEB}: Dialect-Aware,\
     \ {A}rabic-Centric, Cross-Lingual, and Cross-Cultural Embedding Models and Benchmarks\",\n    author\
     \ = \"Bhatia, Gagan  and\n    Nagoudi, El Moatez Billah  and\n    El Mekki, Abdellah  and\n    Alwajih,\
@@ -216,6 +227,7 @@
   month: 4
   venue: NAACL 2025 (SRW)
   link: https://aclanthology.org/2025.naacl-srw.32.pdf
+  summary: "Introduces a benchmark probing temporal biases in language models across date formats, time periods, and reasoning tasks."
   bibtex: "@inproceedings{bhatia-etal-2025-datelogicqa,\n    title = \"{D}ate{L}ogic{QA}: Benchmarking\
     \ Temporal Biases in Large Language Models\",\n    author = \"Bhatia, Gagan  and\n    Tang, MingZe\
     \  and\n    Mahanta, Cristina  and\n    Kazi, Madiha  and\n    Peyrard, Maxime  and\n    Zhao, Wei\"\
@@ -237,6 +249,7 @@
   month: 10
   venue: arXiv
   link: https://arxiv.org/abs/2510.06107
+  summary: "Traces concepts through model layers to explain how semantic drift produces fluent but contextually unsupported answers."
   bibtex: "@misc{bhatia2026distributionalsemanticstracingframework,\n    title={Distributional Semantics\
     \ Tracing: A Framework for Explaining Hallucinations in Large Language Models}, \n    author={Gagan\
     \ Bhatia and Somayajulu G Sripada and Kevin Allan and Jacobo Azcona},\n    year={2026},\n    eprint={2510.06107},\n\
@@ -252,6 +265,7 @@
   month: 8
   venue: ACL 2024 (Findings)
   link: https://aclanthology.org/2024.findings-acl.774.pdf
+  summary: "Develops multimodal financial models that combine text, tables, images, retrieval, and tools for financial analysis."
   bibtex: "@inproceedings{bhatia-etal-2024-fintral,\n    title = \"{F}in{T}ral: A Family of {GPT}-4 Level\
     \ Multimodal Financial Large Language Models\",\n    author = \"Bhatia, Gagan  and\n    Nagoudi, El\
     \ Moatez Billah  and\n    Cavusoglu, Hasan  and\n    Abdul-Mageed, Muhammad\",\n    editor = \"Ku,\
@@ -271,6 +285,7 @@
   month: 8
   venue: ACL 2024
   link: https://aclanthology.org/2024.acl-long.689.pdf
+  summary: "Introduces Arabic vision-language models and the Henna benchmark for evaluating visual reasoning and cultural understanding."
   bibtex: "@inproceedings{alwajih-etal-2024-peacock,\n    title = \"Peacock: A Family of {A}rabic Multimodal\
     \ Large Language Models and Benchmarks\",\n    author = \"Alwajih, Fakhraddin  and\n    Nagoudi, El\
     \ Moatez Billah  and\n    Bhatia, Gagan  and\n    Mohamed, Abdelrahman  and\n    Abdul-Mageed, Muhammad\"\
@@ -289,6 +304,7 @@
   month: 8
   venue: ArabicNLP 2024
   link: https://aclanthology.org/2024.arabicnlp-1.19.pdf
+  summary: "Introduces a model for recognizing printed and handwritten Arabic, including diacritics and high-resolution manuscript images."
   bibtex: "@inproceedings{bhatia-etal-2024-qalam,\n    title = \"Qalam: A Multimodal {LLM} for {A}rabic\
     \ Optical Character and Handwriting Recognition\",\n    author = \"Bhatia, Gagan  and\n    Nagoudi,\
     \ El Moatez Billah  and\n    Alwajih, Fakhraddin  and\n    Abdul-Mageed, Muhammad\",\n    editor =\
@@ -309,6 +325,7 @@
   month: 8
   venue: ArabicNLP 2024
   link: https://aclanthology.org/2024.arabicnlp-1.27.pdf
+  summary: "Builds an Arabic multimodal assistant that understands images and responds in six Arabic dialects."
   bibtex: "@inproceedings{alwajih-etal-2024-dallah,\n    title = \"Dallah: A Dialect-Aware Multimodal\
     \ Large Language Model for {A}rabic\",\n    author = \"Alwajih, Fakhraddin  and\n    Bhatia, Gagan\
     \  and\n    Abdul-Mageed, Muhammad\",\n    editor = \"Habash, Nizar  and\n    Bouamor, Houda  and\n\
@@ -330,6 +347,7 @@
   month: 12
   venue: ArabicNLP 2023
   link: https://aclanthology.org/2023.arabicnlp-1.9.pdf
+  summary: "Evaluates prompting for Arabic grammar correction, showing that smaller task-finetuned models still outperform instruction-tuned LLMs."
   bibtex: "@inproceedings{kwon-etal-2023-beyond,\n    title = \"Beyond {E}nglish: Evaluating {LLM}s for\
     \ {A}rabic Grammatical Error Correction\",\n    author = \"Kwon, Sang  and\n    Bhatia, Gagan  and\n\
     \    Nagoudi, El Moatez Billah  and\n    Abdul-Mageed, Muhammad\",\n    editor = \"Sawaf, Hassan \
@@ -351,6 +369,7 @@
   month: 5
   venue: VarDial 2023
   link: https://aclanthology.org/2023.vardial-1.24.pdf
+  summary: "Investigates multilingual models for intent detection and slot filling in language varieties with limited training data."
   bibtex: "@inproceedings{kwon-etal-2023-sidlr,\n    title = \"{SIDLR}: Slot and Intent Detection Models\
     \ for Low-Resource Language Varieties\",\n    author = \"Kwon, Sang Yun  and\n    Bhatia, Gagan  and\n\
     \    Nagoudi, Elmoatez Billah  and\n    Alcoba Inciarte, Alcides  and\n    Abdul-mageed, Muhammad\"\
@@ -370,6 +389,7 @@
   month: 7
   venue: SemEval 2023
   link: https://aclanthology.org/2023.semeval-1.33.pdf
+  summary: "Applies transfer learning and multilingual finetuning to sentiment analysis across 14 African languages."
   bibtex: "@inproceedings{bhatia-etal-2023-ubc,\n    title = \"{UBC}-{DLNLP} at {S}em{E}val-2023 Task\
     \ 12: Impact of Transfer Learning on {A}frican Sentiment Analysis\",\n    author = \"Bhatia, Gagan\
     \  and\n    Adebara, Ife  and\n    Elmadany, Abdelrahim  and\n    Abdul-mageed, Muhammad\",\n    editor\
@@ -387,6 +407,7 @@
   month: 6
   venue: arXiv
   link: https://arxiv.org/abs/2506.13458
+  summary: "Shows that finetuning CLIP improves recognition of walking, running, sitting, and standing from individual photographs."
   bibtex: "@misc{mahanta2025leveragingvisionlanguagepretraininghuman,\n    title={Leveraging Vision-Language\
     \ Pre-training for Human Activity Recognition in Still Images}, \n    author={Cristina Mahanta and\
     \ Gagan Bhatia},\n    year={2025},\n    eprint={2506.13458},\n    archivePrefix={arXiv},\n    primaryClass={cs.CV},\n\
@@ -401,6 +422,7 @@
   month: 8
   venue: arXiv
   link: https://arxiv.org/abs/2308.04492
+  summary: "Studies ChatGPT for Arabic grammar correction and uses synthetic training data to improve specialized correction models."
   bibtex: "@misc{kwon2023chatgptarabicgrammaticalerror,\n    title={ChatGPT for Arabic Grammatical Error\
     \ Correction}, \n    author={Sang Yun Kwon and Gagan Bhatia and El Moatez Billah Nagoud and Muhammad\
     \ Abdul-Mageed},\n    year={2023},\n    eprint={2308.04492},\n    archivePrefix={arXiv},\n    primaryClass={cs.AI},\n\

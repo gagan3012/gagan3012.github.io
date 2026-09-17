@@ -25,7 +25,7 @@ HEADER = (
     "# Publications.\n"
     '# venue: short label shown next to the paper — "arXiv" for preprints,\n'
     '#        otherwise the conference/journal (e.g. "EMNLP 2025").\n'
-    "# Papers are grouped by year automatically; order within a year follows this file.\n"
+    "# Papers are sorted by year and month, newest first; unknown months come last.\n"
     "# bibtex: filled in by scripts/fetch_bibtex.py; hand-edits are preserved.\n"
 )
 

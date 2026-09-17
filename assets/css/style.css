@@ -92,6 +92,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .pub-title { font: 400 28px/1.35 var(--serif); color: var(--text); letter-spacing: -.015em; }
 a.pub-title, a.item-title { color: var(--accent); text-decoration-color: #8aa890; text-underline-offset: 4px; }
 a.pub-title:hover, a.item-title:hover, .prose a:hover { color: #153e2c; background: #dce8d3; text-decoration-color: currentColor; }
+.pub-summary { color: var(--text-2); font-size: 17px; line-height: 1.65; margin: 10px 0 0; }
 .pub-authors { color: var(--text-3); font-size: 16px; line-height: 1.7; margin: 10px 0 0; }
 .pub-authors strong { color: var(--text); font-weight: 600; }
 .pub-actions { grid-area: act; display: flex; align-items: start; gap: 7px; }

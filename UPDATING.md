@@ -15,6 +15,7 @@ Edit [`data/papers.yaml`](data/papers.yaml) and add a new entry:
   month: 9 # publication month (1–12), when known
   venue: "arXiv" # or the conference/journal, e.g. "EMNLP 2025"
   link: "https://arxiv.org/abs/xxxx.xxxxx"
+  summary: "One short sentence describing the main contribution or finding."
 ```
 
 Papers are sorted automatically by year and month, newest first. Use the
@@ -24,6 +25,10 @@ The `venue` label is shown as
 a small tag next to each paper — write `arXiv` (or `TechRxiv`) for preprints,
 which renders as a plain outlined tag, and a real venue name for anything
 peer-reviewed, which renders in the accent colour.
+
+Each paper's `summary` appears below its title. Keep it to one short sentence
+based on the abstract. Add summaries manually for papers imported by the
+weekly sync; existing summaries are preserved.
 
 This repo also has a scheduled workflow (`.github/workflows/papers-sync.yml`)
 that checks Semantic Scholar weekly and appends any new paper it finds — it

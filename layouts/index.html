@@ -101,6 +101,7 @@
           {{ else }}
           <span class="pub-title">{{ $p.title }}</span>
           {{ end }}
+          {{ with $p.summary }}<p class="pub-summary">{{ . }}</p>{{ end }}
           <p class="pub-authors">
             {{ range $i, $a := $p.authors }}{{ if $i }}, {{ end }}{{ if eq $a "Gagan Bhatia" }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end }}{{ end }}
           </p>
