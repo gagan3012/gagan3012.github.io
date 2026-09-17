@@ -1,7 +1,7 @@
 # Selected research and engineering contributions.
-- title: "Agentic retrieval-augmented generation"
-  summary: "At Qatar Computing Research Institute, I contributed retrieval and verification components to a production multi-agent question-answering platform serving over 1.9 million requests in under a year."
-  url: "https://aclanthology.org/2026.acl-industry.109.pdf"
+- title: "ChronoLens: Measuring language change"
+  summary: "ChronoLens uses interpretable multilingual representations to trace changes in grammar, meaning, and language use across two centuries of parliamentary text."
+  url: "https://arxiv.org/abs/2608.03507"
   label: "Read the paper"
 
 - title: "Temporal reasoning in LLMs"
