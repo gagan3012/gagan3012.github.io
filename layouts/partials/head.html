@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f7f7f0">
+{{ partial "theme.html" . }}
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.description }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <link rel="canonical" href="{{ .Permalink }}">
@@ -18,7 +19,8 @@
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
 
 {{ $style := resources.Get "css/style.css" }}
-{{ if hugo.IsProduction }}{{ $style = $style | minify | fingerprint }}{{ end }}
+{{ if hugo.IsProduction }}{{ $style = $style | minify }}{{ end }}
+{{ $style = $style | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}"{{ with $style.Data.Integrity }} integrity="{{ . }}"{{ end }}>
 
 {{ if .Site.Params.mysite.discovery }}
