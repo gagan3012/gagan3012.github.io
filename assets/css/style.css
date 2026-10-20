@@ -81,7 +81,7 @@ button { font: inherit; cursor: pointer; }
 button, a { -webkit-tap-highlight-color: transparent; }
 ::selection { background: #d6e6bf; color: #173c2c; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
-.wrap, .nav-inner, .footer-inner { width: 100%; margin: 0 auto; padding-inline: clamp(24px, 3vw, 64px); }
+.wrap, .nav-inner, .footer-inner { width: 100%; max-width: 1280px; margin: 0 auto; padding-inline: clamp(24px, 3vw, 40px); }
 .skip-link { position: fixed; top: 8px; left: 8px; transform: translateY(-150%); padding: 12px 20px; background: var(--accent); color: var(--on-accent); z-index: 200; }
 .skip-link:focus { transform: none; }
 .site-nav { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); border-bottom: 1px solid var(--border); backdrop-filter: blur(16px); }
@@ -107,6 +107,19 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-tagline { max-width: 40ch; font: 400 36px/1.42 var(--sans); letter-spacing: -.02em; margin: 0 0 22px; }
 .hero-role { color: var(--text-2); font-size: var(--font-body); max-width: 60ch; margin: 0 0 28px; }
 .hero-availability { color: var(--accent); font-size: var(--font-body); font-weight: 600; margin: 0 0 20px; }
+.conference-note { max-width: 57ch; margin: 0 0 28px; padding: 18px 20px; background: var(--accent-dim); border-left: 3px solid var(--accent); }
+.conference-note p { margin: 0; color: var(--text-2); font-size: 18px; line-height: 1.6; }
+.conference-note .conference-label { margin-bottom: 6px; color: var(--accent); font-size: 16px; font-weight: 700; letter-spacing: .04em; }
+.conference-links { display: flex; flex-wrap: wrap; gap: 4px 24px; margin-top: 8px; }
+.conference-links a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 17px; font-weight: 600; }
+.conference-papers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; padding: 0; margin: 0; list-style: none; }
+.conference-papers li { display: flex; flex-direction: column; align-items: flex-start; padding: 28px; border: 1px solid var(--border-2); background: var(--bg-2); }
+.conference-badge { padding: 4px 9px; margin-bottom: 18px; background: var(--accent-dim); color: var(--accent); font-size: 14px; font-weight: 600; }
+.conference-papers h3 { margin: 0 0 14px; font-size: 26px; line-height: 1.4; font-weight: 500; letter-spacing: -.02em; }
+.conference-papers h3 a { text-decoration: none; }
+.conference-papers h3 a:hover { text-decoration: underline; }
+.conference-papers p { margin: 0 0 20px; color: var(--text-2); font-size: 18px; line-height: 1.7; }
+.conference-paper-link { margin-top: auto; padding-block: 8px; font-size: 17px; font-weight: 600; }
 .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
 .primary-button { display: inline-flex; justify-content: space-between; align-items: center; gap: 27px; padding: 13px 20px; background: var(--accent); color: var(--on-accent); font-size: var(--font-body); font-weight: 600; text-decoration: none; border: 1px solid var(--accent); transition: background .2s; }
 .primary-button:hover { background: var(--accent-hover); text-decoration: none; }
@@ -153,7 +166,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .pub-venue { grid-area: tag; color: var(--accent); text-transform: uppercase; font: var(--font-small)/1.5 var(--sans); letter-spacing: .035em; }
 .pub-venue.is-preprint { color: var(--text-3); }
 .pub-body { grid-area: body; min-width: 0; }
-.pub-title { font: 400 var(--font-title)/1.35 var(--sans); color: var(--text); letter-spacing: -.015em; }
+.pub-title { font: 400 26px/1.35 var(--sans); color: var(--text); letter-spacing: -.015em; }
 a.pub-title, a.item-title { color: var(--accent); text-decoration-color: var(--link-underline); text-underline-offset: 4px; }
 a.pub-title:hover, a.item-title:hover, .prose a:hover { color: var(--link-hover); background: var(--link-hover-bg); text-decoration-color: currentColor; }
 .pub-summary { color: var(--text-2); font-size: var(--font-body); line-height: 1.75; margin: 10px 0 0; }
@@ -252,6 +265,9 @@ a.pub-action { color: var(--on-accent); background: var(--accent); }
   .section-index { margin: 0; }
   .section-count { display: inline-block; margin: 0 0 0 15px; }
   .work-highlights { grid-template-columns: 1fr; gap: 24px; }
+  .conference-papers { grid-template-columns: 1fr; }
+  .conference-papers li { padding: 22px; }
+  .conference-note { padding: 16px; }
   .pub-action { padding: 10px 13px; }
   .row-item { padding-block: 24px; }
   .footer-inner { flex-wrap: wrap; }

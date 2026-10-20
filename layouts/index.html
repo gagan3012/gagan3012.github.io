@@ -12,6 +12,14 @@
         {{ with .Site.Params.tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
         <p class="hero-role">{{ .Site.Params.description }}</p>
         {{ with .Site.Params.availability }}<p class="hero-availability">{{ . }}</p>{{ end }}
+        <aside class="conference-note" aria-label="Meet at EMNLP 2026">
+          <p class="conference-label">Attending EMNLP 2026</p>
+          <p>Let’s chat about LLM interpretability, temporal reasoning, and evaluation.</p>
+          <div class="conference-links">
+            <a href="mailto:{{ .Site.Params.email }}?subject=Meet%20at%20EMNLP%202026">Meet at EMNLP <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </aside>
         <div class="hero-cta">
           <a class="primary-button" href="mailto:{{ .Site.Params.email }}">Contact me <span aria-hidden="true">↗</span></a>
           <a class="cv-button" href="{{ "files/cv.pdf" | relURL }}">View CV <span aria-hidden="true">↗</span></a>
@@ -20,7 +28,7 @@
           <a href="#research">Research</a>
           <a href="https://github.com/gagan3012" target="_blank" rel="noopener">GitHub</a>
           <a href="https://scholar.google.com/citations?user=2Z0KWkEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
-          <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">Connect on LinkedIn</a>
         </div>
       </div>
       <figure class="hero-photo">
@@ -29,6 +37,27 @@
       </figure>
     </div>
     <div class="hero-footnote"><span>Artificial intelligence &amp; natural language processing</span><a href="#selected-work">Selected contributions <span aria-hidden="true">↓</span></a></div>
+  </div>
+</section>
+
+<section id="emnlp" class="section conference-section" aria-labelledby="emnlp-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-index">{{ $n.Add "i" 1 }}{{ printf "%02d" ($n.Get "i") }}</span>
+      <h2 id="emnlp-title">At EMNLP 2026</h2>
+    </div>
+    <ul class="conference-papers">
+      {{ range $papers }}
+      {{ if in .venue "EMNLP 2026" }}
+      <li>
+        <span class="conference-badge">{{ .venue }}</span>
+        <h3><a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a></h3>
+        {{ with .summary }}<p>{{ . }}</p>{{ end }}
+        <a class="conference-paper-link" href="{{ .link }}" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span></a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
   </div>
 </section>
 
@@ -278,7 +307,7 @@
     <div class="hero-links">
       <a href="https://github.com/gagan3012" target="_blank" rel="noopener">GitHub</a>
       <a href="https://scholar.google.com/citations?user=2Z0KWkEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
-      <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/gaganbhatiaml/" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>
