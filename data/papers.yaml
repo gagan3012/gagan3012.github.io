@@ -3,6 +3,28 @@
 #        otherwise the conference/journal (e.g. "EMNLP 2025").
 # Papers are sorted by year and month, newest first; unknown months come last.
 # bibtex: filled in by scripts/fetch_bibtex.py; hand-edits are preserved.
+- title: 'The Quality–Efficiency Frontier in Authorship Verification: When Are LLMs Worth the Cost?'
+  authors:
+  - Gagan Bhatia
+  - Yamen Ajjour
+  - Lotta Kiefer
+  - Christoph Leiter
+  - Elena Schmidt
+  - Steffen Eger
+  year: 2026
+  month: 11
+  venue: alphaXiv
+  link: https://www.alphaxiv.org/abs/2611.llms-authorship-verification-efficiency
+  summary: "Introduces TrainAVUE and InferAVUE to measure accuracy–efficiency trade-offs in authorship verification, showing when LLM gains justify their time and memory costs."
+  bibtex: |
+    @misc{bhatia2026qualityefficiency,
+      title = {The Quality–Efficiency Frontier in Authorship Verification: When Are LLMs Worth the Cost?},
+      author = {Bhatia, Gagan and Ajjour, Yamen and Kiefer, Lotta and Leiter, Christoph and Schmidt, Elena and Eger, Steffen},
+      year = {2026},
+      publisher = {alphaXiv},
+      url = {https://www.alphaxiv.org/abs/2611.llms-authorship-verification-efficiency},
+      keywords = {Computation and Language (cs.CL), Machine Learning (cs.LG), Authorship Verification, Large Language Models, Efficiency, Stylometry, Parameter-Efficient Fine-Tuning}
+    }
 - title: From RAG to Agentic RAG for Faithful Islamic Question Answering
   authors:
   - Gagan Bhatia
