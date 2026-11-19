@@ -135,7 +135,7 @@
   - Steffen Eger
   year: 2026
   month: 8
-  venue: arXiv
+  venue: EACL 2027 (Main Conference)
   link: https://arxiv.org/abs/2608.03507
   summary: "Uses interpretable multilingual representations to compare changes in grammar, meaning, and language use across two centuries of parliamentary text."
   bibtex: "@misc{bhatia2026chronolensmeasuringlanguagechange,\n    title={ChronoLens: Measuring Language\
